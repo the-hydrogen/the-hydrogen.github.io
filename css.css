@@ -1,0 +1,264 @@
+html,body {
+    margin-top: 34px; 
+    overflow-x: hidden !important; 
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #666;
+    z-index: 1;
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 0;
+    padding: 7px 7px;
+    background: grey;
+    transition: all 0.3s;
+}
+
+nav > ul > li:hover {
+    background: red;
+    color: black;
+}
+nav > ul > li > a {
+    text-decoration: none !important;
+    transition: all 0.3s;
+    color: white;
+}
+nav > ul > li:hover > a {
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: all 0.3s;
+    color: black;
+}
+
+header {
+    padding: 30px 0;
+    background: black;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+#menu {
+    font-size: px;
+    width: 20%;
+    background: green;
+}
+
+#menu > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu > ul > li > a {
+    display: block;
+    padding: 3px 0;
+    padding-left: 10px;
+    background: grey;
+    border-bottom: 1px solid black;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-color: black;
+}
+
+#menu > ul > li > a:hover {
+    border-left-width: 7px;
+    border-left-style: solid;
+    background: #999;
+}
+
+.mainpost {
+    padding: 0 !important;
+    background: yellowgreen;
+}
+
+.mainpost > h1 {
+    margin: 0;
+    padding: 5px 0;
+    background: #3C3C3C;
+    color: white;
+    text-align: center;
+}
+
+.mainpost > div {
+    padding: 7px;
+    min-height: 250px;
+    padding-bottom: 70px;
+}
+
+footer {
+    color: black;
+    background: grey;
+    padding: 10px 0;
+}
+
+footer > ul {
+    list-style: none;
+    margin: 0;
+    width: 150px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.back {
+    background: #C2FF66;
+    display: inline-block;
+    height: 275px;
+    border-radius: 25px;
+    margin-bottom: 4px;
+}
+
+.botao {
+    cursor: pointer;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: URL("btn.jpg");
+    background-position: -100 -1;
+    border-radius: 50%;
+    transition: all 1s;
+    margin: 20 10;
+    box-shadow: 0 0 14px black;
+}
+
+.botao:active {
+    transform: scale(0.8);
+}
+
+.botao > i {
+    font-size: 140px;
+    position: relative;
+    left: 5;
+    top: 5;
+    color: black; 
+    opacity: 0.5;
+}
+
+.botaoD {
+    text-align: initial;
+    color: gold;
+}
+
+.botaoD > i {
+    color: gold;
+}
+
+.botao > div {
+    position: relative;
+    display: block;
+    top: 20;
+    width: inherit;
+    font-size: 13px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* background: rgba(255, 255, 255, 0.7); */
+    font-weight: bold;
+    white-space: normal;
+    text-align: center;
+}
+
+/* Icons */
+
+.fa {
+    padding: 15px;
+    font-size: 30px !important;
+    width: 60px;
+    border-radius: 50%;
+    text-decoration: none !important;
+    margin: 0 1px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s;
+}
+
+.fa:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    background: #009DFF;
+}
+
+.fa-instagram {
+    background: #125688;
+  }
+
+.fa-youtube {
+    background: red;
+  }
+
+.fa-twitch {
+    background: #6A00FF;
+  }
+
+#stream {
+    color: black;
+}
+
+.comentar {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 110;
+    right: 20;
+    background: white;
+    padding: 20px 10px 10px 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px black;
+}
+
+.comentar > .fb-comments {
+    max-height: 500px;
+    overflow: auto; 
+}
+
+.comentar > .exit {
+    cursor: pointer;
+    position: absolute;
+    top: 5;
+    left: 5;
+    color: white;
+    background: black;
+    padding: 3;
+    border-radius: 50%;
+}
+
+.toggleComentar, .naoCarregando {
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    position: fixed;
+    right: 20;
+    top: 60;
+    background: white;
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 5px black;
+}
+
+.naoCarregando {
+    display: none;
+}
