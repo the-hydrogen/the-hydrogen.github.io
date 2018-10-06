@@ -19,10 +19,11 @@ nav > ul {
 
 nav > ul > li {
     display: inline-block;
-    margin: 0;
-    padding: 7px 7px;
+    margin: 5 0;
+    padding: 7px 9px;
     background: grey;
     transition: all 0.3s;
+    border-radius: 7px;
 }
 
 nav > ul > li:hover {
@@ -211,7 +212,9 @@ footer > ul > li > a {
   }
 
 #stream {
-    color: black;
+    color: white;
+    text-shadow: 1px 1px 1px black,
+                 2px 2px 1px black;
 }
 
 .comentar {
