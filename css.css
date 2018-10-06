@@ -1,6 +1,11 @@
 html,body {
     margin-top: 34px; 
     overflow-x: hidden !important; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+a, a:hover {
+    text-decoration: none !important;
 }
 
 nav {
