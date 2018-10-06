@@ -118,7 +118,7 @@ footer > ul > li > a {
 .back {
     background: #C2FF66;
     display: inline-block;
-    height: 275px;
+    height: 255px;
     border-radius: 25px;
     margin-bottom: 4px;
 }
@@ -132,7 +132,7 @@ footer > ul > li > a {
     background-position: -100 -1;
     border-radius: 50%;
     transition: all 1s;
-    margin: 20 10;
+    margin: 15 10 20 10;
     box-shadow: 0 0 14px black;
 }
 
@@ -152,6 +152,7 @@ footer > ul > li > a {
 .botaoD {
     text-align: initial;
     color: gold;
+    box-shadow: 0 0 14px rgba(255, 215, 0, 0.6);
 }
 
 .botaoD > i {
@@ -164,9 +165,7 @@ footer > ul > li > a {
     top: 20;
     width: inherit;
     font-size: 13px;
-    /* padding: 10px; */
     border-radius: 10px;
-    /* background: rgba(255, 255, 255, 0.7); */
     font-weight: bold;
     white-space: normal;
     text-align: center;
