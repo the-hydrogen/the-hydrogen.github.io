@@ -9,16 +9,22 @@ a, a:hover {
 }
 
 .ativarTodos {
+    position: fixed;
+    top: 50;
+    left: 5;
     text-align: center;
     z-index: 1;
     cursor: pointer;
-    position: fixed;
-    padding: 5px 20px;
+    padding: 5px 10px;
     color: black;
     background: white;
-    border-radius: 10px;
-    top: 46;
-    left: 2;
+    border-radius: 7px;
+    transition: all 0.2s;
+    box-shadow: 0 0 10px black;
+}
+
+.ativarTodos:active {
+    transform: scale(0.95);
 }
 
 nav {
@@ -230,8 +236,7 @@ footer > ul > li > a {
 
 .HYPERBRUH > i, .sad > i, .entrevista > i, .rumble > i,
 .twitch > i, .yasuo > i, .graves > i, .ivern > i,
-.vladimir > i, .renekton > i, .maconha > i{
-    color: black;
+.vladimir > i, .renekton > i, .maconha > i, .kassadin > i{
     text-shadow: 0 0 2px white;
 }
 
@@ -267,6 +272,11 @@ footer > ul > li > a {
 
 .renekton {
     background: url('img/Renekton.png');
+    background-size: 150px;
+}
+
+.kassadin {
+    background: url('img/Kassadin.png');
     background-size: 150px;
 }
 
