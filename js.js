@@ -3,7 +3,8 @@ $(document).ready(function(){
     $("nav").load("files/nav.html");
 
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
-    $("div[class='botao'] > div").after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    
     $("audio").on('ended', function(){
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
     });

@@ -142,6 +142,11 @@ footer > ul > li > a {
     box-shadow: 0 0 14px black;
 }
 
+.pride {
+    background: url("btnpride.png");
+    background-position: -100 -1;
+}
+  
 .botao:active {
     transform: scale(0.8);
 }
