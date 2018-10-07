@@ -9,6 +9,10 @@ $(document).ready(function(){
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
     });
 
+    $('.ativarTodos').click(function(){
+        $('audio').click();
+    });
+
     var botoes = $(".botao").not(".botaoD");
 
     for(var i = 0; i < botoes.length; i++){

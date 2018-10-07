@@ -8,6 +8,19 @@ a, a:hover {
     text-decoration: none !important;
 }
 
+.ativarTodos {
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    position: fixed;
+    padding: 5px 20px;
+    color: black;
+    background: white;
+    border-radius: 10px;
+    top: 46;
+    left: 2;
+}
+
 nav {
     position: fixed;
     width: 100%;
