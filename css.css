@@ -178,6 +178,12 @@ footer > ul > li > a {
     text-align: center;
 }
 
+.maconha {
+    background: url('img/maconha.jpg');
+    background-size: 250px;
+    background-position: -45 -55;
+}
+
 .pride {
     background: url("img/btnpride.png");
     background-position: -100 -1;
@@ -203,9 +209,15 @@ footer > ul > li > a {
     background-size: 350px; 
 }
 
+.risada {
+    background: url('img/risada.jpg');
+    background-size: 140px;
+    background-position: 10 -15;
+}
+
 .HYPERBRUH > i, .sad > i, .entrevista > i, .rumble > i,
 .twitch > i, .yasuo > i, .graves > i, .ivern > i,
-.vladimir > i, .renekton > i{
+.vladimir > i, .renekton > i, .maconha > i{
     color: black;
     text-shadow: 0 0 2px white;
 }
