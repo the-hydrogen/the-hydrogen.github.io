@@ -134,7 +134,7 @@ footer > ul > li > a {
     display: inline-block;
     width: 150px;
     height: 150px;
-    background: URL("btn.jpg");
+    background: URL("img/btn.jpg");
     background-position: -100 -1;
     border-radius: 50%;
     transition: all 1s;
@@ -142,11 +142,7 @@ footer > ul > li > a {
     box-shadow: 0 0 14px black;
 }
 
-.pride {
-    background: url("btnpride.png");
-    background-position: -100 -1;
-}
-  
+
 .botao:active {
     transform: scale(0.8);
 }
@@ -181,6 +177,74 @@ footer > ul > li > a {
     white-space: normal;
     text-align: center;
 }
+
+.pride {
+    background: url("img/btnpride.png");
+    background-position: -100 -1;
+}
+
+.HYPERBRUH {
+    background-color: black;
+    background-image: url('img/HYPERBRUH.png');
+    background-size: 200px;
+    background-position: -10 -20;
+    background-repeat: no-repeat;
+}
+
+.sad {
+    background: url('img/sad.jpeg');
+    background-size: 200px;
+    background-position: -20 -30;
+}
+
+.entrevista {
+    background: url('img/entrevista.jpg');
+    background-position: -120 -10;
+    background-size: 350px; 
+}
+
+.HYPERBRUH > i, .sad > i, .entrevista > i, .rumble > i,
+.twitch > i, .yasuo > i, .graves > i, .ivern > i,
+.vladimir > i, .renekton > i{
+    color: black;
+    text-shadow: 0 0 2px white;
+}
+
+.rumble {
+    background: url('img/Rumble.png');
+    background-size: 150px;
+}
+
+.twitch {
+    background: url('img/Twitch.png');
+    background-size: 150px;
+}
+
+.yasuo {
+    background: url('img/Yasuo.png');
+    background-size: 150px;
+}
+
+.graves {
+    background: url('img/Graves.png');
+    background-size: 150px;
+}
+
+.ivern {
+    background: url('img/Ivern.png');
+    background-size: 150px;
+}
+
+.vladimir {
+    background: url('img/Vladimir.png');
+    background-size: 150px;
+}
+
+.renekton {
+    background: url('img/Renekton.png');
+    background-size: 150px;
+}
+
 
 /* Icons */
 
