@@ -44,9 +44,9 @@ $(document).ready(function(){
         },
         success: function(channel){
           if (channel["stream"] == null) {
-              $('#stream').html("<b>Stream</b> <b style='color: red'>OFFLINE</b>");
+              $('#stream').html("<b>Stream <b style='color: red'>OFFLINE</span></b>");
             } else {
-                $('#stream').html("<b>Stream</b> <b style='color: lightgreen'>ONLINE</b>");
+                $('#stream').html("<b>Stream <span style='color: lightgreen'>ONLINE</span></b>");
           }
         }
       });
