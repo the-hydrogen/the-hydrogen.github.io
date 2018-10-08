@@ -143,7 +143,7 @@ footer > ul > li > a {
 .back {
     background: #C2FF66;
     display: inline-block;
-    height: 255px;
+    height: 260px;
     border-radius: 25px;
     margin-bottom: 4px;
 }
@@ -185,13 +185,20 @@ footer > ul > li > a {
     color: gold;
 }
 
+.botaoD > div {
+    background: none !important;
+}
+
 .botao > div {
     position: relative;
     display: block;
     top: 20;
     width: inherit;
+    height: 37px;
+    background: rgb(255, 255, 255, 0.4);
+    margin-bottom: 5px;
     font-size: 13px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
     white-space: normal;
     text-align: center;
@@ -236,7 +243,7 @@ footer > ul > li > a {
 
 .HYPERBRUH > i, .sad > i, .entrevista > i, .rumble > i,
 .twitch > i, .yasuo > i, .graves > i, .ivern > i,
-.vladimir > i, .renekton > i, .maconha > i, .kassadin > i{
+.vladimir > i, .renekton > i, .maconha > i, .kassadin > i, .gangplank > i{
     text-shadow: 0 0 2px white;
 }
 
@@ -277,6 +284,11 @@ footer > ul > li > a {
 
 .kassadin {
     background: url('img/Kassadin.png');
+    background-size: 150px;
+}
+
+.gangplank {
+    background: url('img/Gangplank.png');
     background-size: 150px;
 }
 
