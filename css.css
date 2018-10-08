@@ -173,6 +173,7 @@ footer > ul > li > a {
     top: 5;
     color: black; 
     opacity: 0.5;
+    text-shadow: 0 0 2px white;
 }
 
 .botaoD {
@@ -240,12 +241,6 @@ footer > ul > li > a {
     background: url('img/risada.jpg');
     background-size: 140px;
     background-position: 10 -15;
-}
-
-.HYPERBRUH > i, .sad > i, .entrevista > i, .rumble > i,
-.twitch > i, .yasuo > i, .graves > i, .ivern > i,
-.vladimir > i, .renekton > i, .maconha > i, .kassadin > i, .gangplank > i{
-    text-shadow: 0 0 2px white;
 }
 
 .rumble {
