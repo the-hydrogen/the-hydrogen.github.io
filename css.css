@@ -383,7 +383,7 @@ footer > ul > li > a {
 }
 
 .comentar > .fb-comments {
-    max-height: 400px;
+    max-height: 350px;
     overflow-y: auto;
 }
 
