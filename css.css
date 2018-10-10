@@ -349,6 +349,7 @@ footer > ul > li > a {
 .comentar > .fb-comments {
     max-height: 500px;
     overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
 }
 
 .comentar > .exit {
