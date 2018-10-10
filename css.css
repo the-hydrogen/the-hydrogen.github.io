@@ -136,8 +136,7 @@ header {
 
 .mainpost > div {
     padding: 7px;
-    min-height: 250px;
-    padding-bottom: 70px;
+    height: max-content;
 }
 
 footer {
