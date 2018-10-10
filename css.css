@@ -1,6 +1,8 @@
 html, body {
     margin-top: 34px; 
     overflow-x: hidden !important; 
+    font-size: 14px;
+    font-size: 2.5vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 
@@ -347,7 +349,7 @@ footer > ul > li > a {
 }
 
 .comentar > .fb-comments {
-    max-height: 300px;
+    max-height: 400px;
     overflow-y: auto;
 }
 
