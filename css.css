@@ -206,7 +206,7 @@ footer > ul > li > a {
     background: none !important;
 }
 
-.botao > div {
+.botao > div, .gif > div {
     padding: 0 5px;
     position: relative;
     display: block;
@@ -425,4 +425,21 @@ footer > ul > li > a {
     cursor: pointer;
     font-size: 24px;
     margin: 5 5;
+}
+
+.backimg {
+    background: #C2FF66;
+    display: inline-block;
+    height: 260px;
+    padding: 10px;
+    border-radius: 25px;
+    clear: both;
+    margin-bottom: 4px;
+}
+
+.gif > img {
+    border-radius: 20px;
+    width: 150px;
+    height: auto;
+    /* display: block; */
 }

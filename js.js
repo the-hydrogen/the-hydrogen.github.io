@@ -2,28 +2,30 @@ $(document).ready(function(){
     $("footer").load("files/footer.html");
     $("nav").load("files/nav.html");
 
+    // AUDIOS
+
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
     $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
     
     $("audio").on('ended', function(){
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
     });
-
+    
     $('.ativarTodos').click(function(){
         $('audio').click();
     });
-
+    
     var botoes = $(".botao").not(".botaoD");
-
+    
     for(var i = 0; i < botoes.length; i++){
         var b = $(botoes[i]);
         b.children("a").attr("href", b.children("audio").attr('src'));
         b.children("a").attr("download",'');
     }
-
+    
     $(".botao").click(function (e) {
         if($(e.target).hasClass("baixar")) return;
-
+        
         var play = $(this).children("audio")[0];
         
         var toggle = $(this).children("i")[0];
@@ -35,6 +37,20 @@ $(document).ready(function(){
             play.load();
         }
     });
+    
+    // GIFS
+    $('.gif').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    
+    var gifs = $(".gif");
+    
+    for(var i = 0; i < gifs.length; i++){
+        var b = $(gifs[i]);
+        b.children("a").attr("href", b.children("img").attr('src'));
+        b.children("a").attr("download",'');
+    }
+
+
+    // 
 
     $.ajax({
         url: "https://api.twitch.tv/kraken/streams/" + 'thehydrogen',
