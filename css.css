@@ -417,3 +417,13 @@ footer > ul > li > a {
 .naoCarregando {
     display: none;
 }
+
+#collapse {
+    display: none;
+    background: grey;
+    padding: 7px 9px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 5 5;
+}

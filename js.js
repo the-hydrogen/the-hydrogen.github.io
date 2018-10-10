@@ -68,7 +68,6 @@ $(document).ready(function(){
                 $('#MenuC').slideToggle();
             });
             $('#MenuC').append($('<ul></ul>').append($('nav > ul').html()));
-            $('#collapse').hide();
             updateNav();
         }, 50);
         
