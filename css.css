@@ -8,25 +8,6 @@ a, a:hover {
     text-decoration: none !important;
 }
 
-.ativarTodos {
-    position: fixed;
-    top: 50;
-    left: 5;
-    text-align: center;
-    z-index: 1;
-    cursor: pointer;
-    padding: 5px 10px;
-    color: black;
-    background: white;
-    border-radius: 7px;
-    transition: all 0.2s;
-    box-shadow: 0 0 10px black;
-}
-
-.ativarTodos:active {
-    transform: scale(0.95);
-}
-
 nav {
     position: fixed;
     width: 100%;
@@ -370,12 +351,31 @@ footer > ul > li > a {
                  2px 2px 1px black;
 }
 
+.ativarTodos {
+    position: fixed;
+    top: 50;
+    right: 5;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: black;
+    background: white;
+    border-radius: 7px;
+    transition: all 0.2s;
+    box-shadow: 0 0 10px black;
+}
+
+.ativarTodos:active {
+    transform: scale(0.95);
+}
+
 .comentar {
     z-index: 1;
     display: none;
     position: fixed;
-    top: 110;
-    right: 20;
+    top: 160;
+    right: 5;
     background: white;
     padding: 20px 10px 10px 20px;
     border-radius: 7px;
@@ -403,8 +403,8 @@ footer > ul > li > a {
     cursor: pointer;
     color: black;
     position: fixed;
-    right: 20;
-    top: 60;
+    right: 5;
+    top: 110;
     background: white;
     padding: 5px 15px;
     text-align: center;
