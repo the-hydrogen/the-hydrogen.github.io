@@ -28,7 +28,6 @@ a, a:hover {
 }
 
 nav {
-    font-size: 1vw !important;
     position: fixed;
     width: 100%;
     top: 0;
