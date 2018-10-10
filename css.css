@@ -211,7 +211,8 @@ footer > ul > li > a {
     position: relative;
     display: block;
     top: 20;
-    width: inherit;
+    width: 150px;
+    max-width: 150px;
     height: 37px;
     background: rgb(255, 255, 255, 0.4);
     margin-bottom: 5px;
@@ -431,15 +432,16 @@ footer > ul > li > a {
     background: #C2FF66;
     display: inline-block;
     height: 260px;
-    padding: 10px;
     border-radius: 25px;
-    clear: both;
     margin-bottom: 4px;
+    padding: 9px;
 }
 
 .gif > img {
-    border-radius: 20px;
+    pointer-events: none;
+    border-radius: 10px;
     width: 150px;
     height: auto;
-    /* display: block; */
+    margin-bottom: 44px;
+    box-shadow: 0 0 14px black;
 }
