@@ -449,7 +449,6 @@ footer > ul > li > a {
     width: 150px;
     height: 100px;
     margin: 23px 1px;
-    border: 2px solid black;
     box-shadow: 0 0 14px black;
     transition: all 0.3s;
 }
