@@ -11,6 +11,7 @@ a, a:hover {
 nav {
     position: fixed;
     width: 100%;
+    min-height: 42px;
     top: 0;
     background: #666;
     z-index: 1;
