@@ -422,6 +422,7 @@ footer > ul > li > a {
 #collapse {
     display: none;
     background: grey;
+    width: max-content;
     padding: 7px 9px;
     border-radius: 7px;
     cursor: pointer;
@@ -439,10 +440,20 @@ footer > ul > li > a {
 }
 
 .gif > img {
-    pointer-events: none;
     border-radius: 10px;
     width: 150px;
     height: auto;
-    margin-bottom: 44px;
+    margin-top: 26px;
+    margin-bottom: 18px;
     box-shadow: 0 0 14px black;
+    transition: all 0.3s;
+}
+
+.gif > img:hover {
+    transform: scale(3);
+    z-index: 999;
+}
+
+.gif > img:active {
+    pointer-events: none;
 }

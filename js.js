@@ -48,8 +48,7 @@ $(document).ready(function(){
         b.children("a").attr("href", b.children("img").attr('src'));
         b.children("a").attr("download",'');
     }
-
-
+    
     // 
 
     $.ajax({
