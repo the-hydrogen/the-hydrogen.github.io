@@ -306,6 +306,11 @@ footer > ul > li > a {
     background-size: 150px;
 }
 
+.urgot {
+    background: url('img/Urgot.png');
+    background-size: 150px;
+}
+
 
 /* Icons */
 
@@ -447,13 +452,4 @@ footer > ul > li > a {
     margin-bottom: 18px;
     box-shadow: 0 0 14px black;
     transition: all 0.3s;
-}
-
-.gif > img:hover {
-    transform: scale(3);
-    z-index: 999;
-}
-
-.gif > img:active {
-    pointer-events: none;
 }
