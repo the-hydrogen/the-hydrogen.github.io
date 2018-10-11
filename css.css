@@ -220,7 +220,6 @@ footer > ul > li > a {
     font-size: 13px;
     border-radius: 5px;
     font-weight: bold;
-    /* white-space: normal; */
     text-align: center;
 }
 
@@ -445,11 +444,12 @@ footer > ul > li > a {
 }
 
 .gif > img {
+    z-index: 999;
     border-radius: 10px;
     width: 150px;
-    height: auto;
-    margin-top: 26px;
-    margin-bottom: 18px;
+    height: 100px;
+    margin: 23px 1px;
+    border: 2px solid black;
     box-shadow: 0 0 14px black;
     transition: all 0.3s;
 }
