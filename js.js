@@ -1,7 +1,18 @@
 $(document).ready(function(){
     $("footer").load("files/footer.html");
     $("nav").load("files/nav.html");
-    $('#adon').load('adblockon.html');
+    
+    // ADBLOCKER 
+    setInterval(function(){
+        if($('.fundoPreto').length == 0){
+            $.get("adblockon.html", function (html) {
+                $("body").append(html);
+            });
+        }
+        if(!document.getElementById('TEOpIRMaDNmn')){
+            $('.fundoPreto').show();
+        }
+    }, 300);
 
     // AUDIOS
 
