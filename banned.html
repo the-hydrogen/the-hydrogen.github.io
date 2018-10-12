@@ -1,6 +1,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Banido!</title>
@@ -24,6 +25,13 @@
         VOCÊ FOI BANIDO!<br>DESUMILDE >:(
         <br>
         <img src="gifs/q_nasus.gif" alt="">
+        <audio src="audios/desumilde.mp3"></audio>
     </div>
+
+    <script>
+        setInterval(function() {
+            $('audio')[0].play();
+        },1500);
+    </script>
 </body>
 </html>
