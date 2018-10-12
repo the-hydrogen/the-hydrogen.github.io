@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("footer").load("files/footer.html");
     $("nav").load("files/nav.html");
+    $('#adon').load('adblockon.html');
 
     // AUDIOS
 
