@@ -96,7 +96,7 @@ $(document).ready(function(){
             });
             $('#MenuC').append($('<ul></ul>').append($('nav > ul').html()));
             updateNav();
-        }, 50);
+        }, 150);
         
         $(window).on('resize', function(){
             updateNav();
