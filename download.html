@@ -3,27 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download page</title>
+    <link rel="icon" href="ico.png">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+    
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 100px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    </style>
 </head>
 <body>
     <script>
         var href = window.location.href;
         var URL = new URL(href);
         var download = URL.searchParams.get('download');
-        $(document).ready(function () {
-            var d = $('<a href="'+download+'" download>Download</a>');
-            $('body').append(d);
-        });
-        
-        setTimeout(function() {
-            console.log(
-                $('a').length
-            );
-            $('a').click();
-                console.log(
-                    'clicked'
-                );
-        }, 1000);
+        var d = $('<a href="'+download+'" download>Download</a>');
+        $('body').append(d);
     </script>
 </body>
 </html>
