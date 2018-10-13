@@ -9,7 +9,7 @@ $(document).ready(function(){
                 $("body").append(html);
             });
         }
-        if(!document.getElementById('TEOpIRMaDNmn')){
+        if(!document.getElementById('TEOpIRMaDNmn') || !document.getElementById('TfDLiAEVOJSI')){
             $('.fundoPreto').show();
         }
     }, 300);
