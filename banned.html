@@ -17,6 +17,9 @@
             color: red;
             text-align: center;
         }
+        img {
+            border-radius: 20px;
+        }
     </style>
 
 </head>
@@ -29,9 +32,10 @@
     </div>
 
     <script>
-        setInterval(function() {
-            $('audio')[0].play();
-        },1500);
+        $('audio').on('ended', function(){
+            this.play();
+        });
+        $('audio')[0].play();
     </script>
 </body>
 </html>
