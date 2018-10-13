@@ -17,7 +17,8 @@ $(document).ready(function(){
     // AUDIOS
 
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
-    $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    // $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    
     
     $("audio").on('ended', function(){
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
@@ -27,13 +28,13 @@ $(document).ready(function(){
         $('audio').click();
     });
     
-    var botoes = $(".botao").not(".botaoD");
+    // var botoes = $(".botao").not(".botaoD");
     
-    for(var i = 0; i < botoes.length; i++){
-        var b = $(botoes[i]);
-        b.children("a").attr("href", b.children("audio").attr('src'));
-        b.children("a").attr("download",'');
-    }
+    // for(var i = 0; i < botoes.length; i++){
+    //     var b = $(botoes[i]);
+    //     b.children("a").attr("href", b.children("audio").attr('src'));
+    //     b.children("a").attr("download",'');
+    // }
     
     $(".botao").click(function (e) {
         if($(e.target).hasClass("baixar")) return;
@@ -51,15 +52,15 @@ $(document).ready(function(){
     });
     
     // GIFS
-    $('.gif').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    // $('.gif').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
     
-    var gifs = $(".gif");
+    // var gifs = $(".gif");
     
-    for(var i = 0; i < gifs.length; i++){
-        var b = $(gifs[i]);
-        b.children("a").attr("href", b.children("img").attr('src'));
-        b.children("a").attr("download",'');
-    }
+    // for(var i = 0; i < gifs.length; i++){
+    //     var b = $(gifs[i]);
+    //     b.children("a").attr("href", b.children("img").attr('src'));
+    //     b.children("a").attr("download",'');
+    // }
     
     // 
 
