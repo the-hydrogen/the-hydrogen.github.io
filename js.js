@@ -3,16 +3,16 @@ $(document).ready(function(){
     $("nav").load("files/nav.html");
     
     // ADBLOCKER 
-    setInterval(function(){
-        if($('.fundoPreto').length == 0){
-            $.get("adblockon.html", function (html) {
-                $("body").append(html);
-            });
-        }
-        if(!document.getElementById('TEOpIRMaDNmn') || !document.getElementById('TfDLiAEVOJSI')){
-            $('.fundoPreto').show();
-        }
-    }, 300);
+    // setInterval(function(){
+    //     if($('.fundoPreto').length == 0){
+    //         $.get("adblockon.html", function (html) {
+    //             $("body").append(html);
+    //         });
+    //     }
+    //     if(!document.getElementById('TEOpIRMaDNmn') || !document.getElementById('TfDLiAEVOJSI')){
+    //         $('.fundoPreto').show();
+    //     }
+    // }, 300);
 
     // AUDIOS
 
