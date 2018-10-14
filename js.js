@@ -105,7 +105,7 @@ $(document).ready(function(){
     }
 );
 function updateNav(){
-    if($(window).width() <= 500){
+    if($(window).width() <= 600){
         $('nav > ul').hide();
         $('#collapse').show();
     } else {
