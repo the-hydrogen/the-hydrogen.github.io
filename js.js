@@ -63,21 +63,22 @@ $(document).ready(function(){
     // }
     
     // 
-
-    $.ajax({
-        url: "https://api.twitch.tv/kraken/streams/" + 'thehydrogen',
-        dataType: 'json',
-        headers: {
-          'Client-ID': '8as214cog5fxuqjdawgty1cn68ywjv'
-        },
-        success: function(channel){
-          if (channel["stream"] == null) {
-              $('#stream').html("<b>Stream <b style='color: red'>OFFLINE</span></b>");
-            } else {
-                $('#stream').html("<b>Stream <span style='color: lightgreen'>ONLINE</span></b>");
-          }
-        }
-      });
+    setTimeout(function () {
+        $.ajax({
+            url: "https://api.twitch.tv/kraken/streams/" + 'thehydrogen',
+            dataType: 'json',
+            headers: {
+              'Client-ID': '8as214cog5fxuqjdawgty1cn68ywjv'
+            },
+            success: function(channel){
+              if (channel["stream"] == null) {
+                  $('#stream').html("<b>Stream <b style='color: red'>OFFLINE</span></b>");
+                } else {
+                    $('#stream').html("<b>Stream <span style='color: lightgreen'>ONLINE</span></b>");
+              }
+            }
+          });
+    }, 100);
 
         $('.exit').click(function(){
             $(this).parent().toggle('slide', { direction: 'right' }, 400);
