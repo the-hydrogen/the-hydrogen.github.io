@@ -260,56 +260,60 @@ footer > ul > li > a {
     background-position: 10 -15;
 }
 
+.campeao {
+    background-size: 170px !important;
+    background-position: -10 -10 !important;
+}
+
 .rumble {
     background: url('img/Rumble.png');
-    background-size: 150px;
 }
 
 .twitch {
     background: url('img/Twitch.png');
-    background-size: 150px;
 }
 
 .yasuo {
     background: url('img/Yasuo.png');
-    background-size: 150px;
 }
 
 .graves {
     background: url('img/Graves.png');
-    background-size: 150px;
 }
 
 .ivern {
     background: url('img/Ivern.png');
-    background-size: 150px;
 }
 
 .vladimir {
     background: url('img/Vladimir.png');
-    background-size: 150px;
 }
 
 .renekton {
     background: url('img/Renekton.png');
-    background-size: 150px;
 }
 
 .kassadin {
     background: url('img/Kassadin.png');
-    background-size: 150px;
 }
 
 .gangplank {
     background: url('img/Gangplank.png');
-    background-size: 150px;
 }
 
 .urgot {
     background: url('img/Urgot.png');
-    background-size: 150px;
 }
 
+.lee {
+    background: url('img/LeeSin.png');
+}
+
+.gratis {
+    background: url('img/gratis.jpg');
+    background-size: 330px;
+    background-position: -103 -57;
+}
 
 /* Icons */
 
