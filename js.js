@@ -78,7 +78,7 @@ $(document).ready(function(){
               }
             }
           });
-    }, 500);
+    }, 1500);
 
         $('.exit').click(function(){
             $(this).parent().toggle('slide', { direction: 'right' }, 400);
