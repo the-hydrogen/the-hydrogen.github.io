@@ -504,11 +504,11 @@ footer > ul > li > a {
     position: fixed;
     width: max-content;
     height: max-content;
-    right: 75;
+    right: 78;
     top: 140;
     background: white;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 7px;
     box-shadow: 0 0 5px black;
 }
 
