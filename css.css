@@ -309,6 +309,10 @@ footer > ul > li > a {
     background: url('img/LeeSin.png');
 }
 
+.jax {
+    background: url('img/Jax.png');
+}
+
 .gratis {
     background: url('img/gratis.jpg');
     background-size: 330px;
@@ -392,8 +396,8 @@ footer > ul > li > a {
 }
 
 .comentar > .fb-comments {
-    max-height: 350px;
-    overflow-y: auto;
+    max-height: 350px !important;
+    overflow-y: auto !important;
 }
 
 .comentar > .exit {
