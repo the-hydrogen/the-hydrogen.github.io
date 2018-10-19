@@ -502,7 +502,7 @@ footer > ul > li > a {
 
 /* Quantidade de Audios/GIFs */
 
-.qntAudios, .qntGIF {
+.qntAudios, .qntGIF, .aviso {
     z-index: 1;
     font-weight: bold;
     position: fixed;
@@ -522,4 +522,12 @@ footer > ul > li > a {
 
 .qntGIF {
     right: 5;
+}
+
+.aviso {
+    right: 5;
+    top: 175;
+    background: #FF6767;
+    color: black;
+    box-shadow: 0 0 5px red;
 }
