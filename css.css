@@ -14,7 +14,7 @@ nav {
     min-height: 42px;
     top: 0;
     background: #666;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav > ul {
