@@ -115,9 +115,11 @@ $(document).ready(function(){
 );
 function updateNav(){
     if($(window).width() <= 600){
+        $('div').css('font-weight','normal');
         $('nav > ul').hide();
         $('#collapse').show();
     } else {
+        $('div').css('font-weight','bold');
         $('#collapse').hide();
         $('nav > ul').show();
         $('#MenuC').hide();
