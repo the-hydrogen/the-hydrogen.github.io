@@ -504,8 +504,8 @@ footer > ul > li > a {
 }
 
 .baloes {
-    top: 50;
-    right: 5;
+    top: 53;
+    right: 8;
     position: fixed;
     z-index: 2;
 }
@@ -514,7 +514,7 @@ div.toggleBaloes {
     box-shadow: 0 0 5px black;
     color: white;
     position: fixed;
-    top: 50;
+    top: 53;
     right: 190;
     cursor: pointer;
     background: #4C4CFF;
