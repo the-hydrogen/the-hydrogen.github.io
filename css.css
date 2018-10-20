@@ -369,9 +369,9 @@ footer > ul > li > a {
 }
 
 .ativarTodos {
-    position: fixed;
-    top: 50;
-    right: 5;
+    position: absolute;
+    top: 0;
+    right: 0;
     text-align: center;
     z-index: 1;
     cursor: pointer;
@@ -390,9 +390,9 @@ footer > ul > li > a {
 .comentar {
     z-index: 2;
     display: none;
-    position: fixed;
-    top: 140;
-    right: 5;
+    position: absolute;
+    top: 129;
+    right: 0;
     background: white;
     padding: 20px 10px 10px 20px;
     border-radius: 7px;
@@ -419,9 +419,9 @@ footer > ul > li > a {
     z-index: 1;
     cursor: pointer;
     color: black;
-    position: fixed;
-    right: 5;
-    top: 105;
+    position: absolute;
+    right: 0;
+    top: 57;
     background: white;
     padding: 5px 15px;
     text-align: center;
@@ -465,51 +465,16 @@ footer > ul > li > a {
     transition: all 0.3s;
 }
 
-.fundoPreto {
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-#adon{
-    text-align: center;
-    position: fixed;
-    padding: 150px 200px;
-    border-radius: 50px;
-    background: white;
-    z-index: 20;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#adon .desc {
-    margin: 10px 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-}
-
-#adon .links {
-    /* display: block; */
-    margin-top: 5px;
-}
-
 /* Quantidade de Audios/GIFs */
 
 .qntAudios, .qntGIF, .aviso {
     z-index: 1;
     font-weight: bold;
-    position: fixed;
+    position: absolute;
     width: max-content;
     height: max-content;
-    right: 78;
-    top: 140;
+    right: 73;
+    top: 93;
     background: white;
     border-radius: 10px;
     padding: 5px 7px;
@@ -521,13 +486,36 @@ footer > ul > li > a {
 }
 
 .qntGIF {
-    right: 5;
+    right: 0;
 }
 
 .aviso {
-    right: 5;
-    top: 175;
+    right: 0;
+    top: 129;
     background: #FF6767;
     color: black;
     box-shadow: 0 0 5px red;
+}
+
+.baloes {
+    top: 50;
+    right: 5;
+    position: fixed;
+    width: 348px;
+    height: 510px;
+    z-index: 2;
+}
+
+div.toggleBaloes {
+    box-shadow: 0 0 5px black;
+    color: white;
+    position: fixed;
+    top: 50;
+    right: 190;
+    cursor: pointer;
+    background: #4C4CFF;
+    padding: 10;
+    border-radius: 50%;
+    z-index: 3;
+    transition: all 0.4s;
 }
