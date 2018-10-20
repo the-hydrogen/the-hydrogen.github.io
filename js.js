@@ -86,6 +86,7 @@ $(document).ready(function(){
             $('.naoCarregando').toggle('slide', { direction: 'right' }, 400);
             $('.toggleComentar').toggle('slide', { direction: 'right' }, 400);
         } else if($(this).hasClass('toggleBaloes')){
+            $('.baloes').css({'width':410, 'height':510});
             $('.baloes').toggle('slide', { direction: 'right' }, 330);
             if($(this).css('right') == '190px'){
                 $(this).css('right', 5);
@@ -93,6 +94,9 @@ $(document).ready(function(){
                 $(this).css('right', 190);
             }
             $(this).toggleClass('fa-arrow-right fa-arrow-left');
+            setTimeout(function() {
+                $('.baloes').css({'width':165, 'height':200});
+            }, 401);
         }
     });
 
