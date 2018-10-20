@@ -1,0 +1,103 @@
+.maconha {
+    background: url('img/maconha.jpg');
+    background-size: 250px;
+    background-position: -45 -55;
+}
+
+.pride {
+    background: url("img/btnpride.png");
+    background-position: -100 -1;
+}
+
+.HYPERBRUH {
+    background-color: black;
+    background-image: url('img/HYPERBRUH.png');
+    background-size: 200px;
+    background-position: -10 -20;
+    background-repeat: no-repeat;
+}
+
+.sad {
+    background: url('img/sad.jpeg');
+    background-size: 200px;
+    background-position: -20 -30;
+}
+
+.entrevista {
+    background: url('img/entrevista.jpg');
+    background-position: -120 -10;
+    background-size: 350px; 
+}
+
+.risada {
+    background: url('img/risada.jpg');
+    background-size: 140px;
+    background-position: 10 -15;
+}
+
+.campeao {
+    background-size: 170px !important;
+    background-position: -10 -10 !important;
+}
+
+.rumble {
+    background: url('img/Rumble.png');
+}
+
+.twitch {
+    background: url('img/Twitch.png');
+}
+
+.yasuo {
+    background: url('img/Yasuo.png');
+}
+
+.graves {
+    background: url('img/Graves.png');
+}
+
+.ivern {
+    background: url('img/Ivern.png');
+}
+
+.vladimir {
+    background: url('img/Vladimir.png');
+}
+
+.renekton {
+    background: url('img/Renekton.png');
+}
+
+.kassadin {
+    background: url('img/Kassadin.png');
+}
+
+.gangplank {
+    background: url('img/Gangplank.png');
+}
+
+.urgot {
+    background: url('img/Urgot.png');
+}
+
+.lee {
+    background: url('img/LeeSin.png');
+}
+
+.jax {
+    background: url('img/Jax.png');
+}
+
+.ahri {
+    background: url('img/Ahri.png');
+}
+
+.shaco {
+    background: url('img/Shaco.png');
+}
+
+.gratis {
+    background: url('img/gratis.jpg');
+    background-size: 330px;
+    background-position: -103 -57;
+}
