@@ -317,6 +317,10 @@ footer > ul > li > a {
     background: url('img/Ahri.png');
 }
 
+.shaco {
+    background: url('img/Shaco.png');
+}
+
 .gratis {
     background: url('img/gratis.jpg');
     background-size: 330px;
