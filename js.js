@@ -113,7 +113,7 @@ $(document).ready(function(){
             $('#MenuC').html($('<ul></ul>').append($('nav > ul').html()));
         });
         updateNav();
-    }, 300);
+    }, 500);
     
     $(window).on('resize', function(){
         updateNav();
