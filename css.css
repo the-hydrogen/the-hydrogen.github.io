@@ -372,7 +372,7 @@ footer > ul > li > a {
     position: absolute;
     top: 0;
     right: 0;
-    width: 140px;
+    width: 170px;
     text-align: center;
     z-index: 1;
     cursor: pointer;
@@ -421,7 +421,7 @@ footer > ul > li > a {
     cursor: pointer;
     color: black;
     position: absolute;
-    width: 160px;
+    width: 170px;
     right: 0;
     top: 57;
     background: white;
@@ -470,13 +470,14 @@ footer > ul > li > a {
 /* Quantidade de Audios/GIFs */
 
 .qntAudios, .qntGIF, .aviso {
+    text-align: center;
     z-index: 1;
     font-weight: bold;
     position: absolute;
     width: max-content;
     height: max-content;
-    width: 85px;
-    right: 73;
+    width: 95px;
+    right: 83;
     top: 93;
     background: white;
     border-radius: 10px;
@@ -489,7 +490,7 @@ footer > ul > li > a {
 }
 
 .qntGIF {
-    width: 65px;
+    width: 75px;
     right: 0;
 }
 
