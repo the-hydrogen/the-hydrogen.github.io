@@ -95,7 +95,7 @@ $(document).ready(function(){
             }
             $(this).toggleClass('fa-arrow-right fa-arrow-left');
             setTimeout(function() {
-                $('.baloes').css({'width':165, 'height':200});
+                $('.baloes').css({'width':0, 'height':0});
             }, 401);
         }
     });

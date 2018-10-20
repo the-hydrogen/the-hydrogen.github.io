@@ -372,6 +372,7 @@ footer > ul > li > a {
     position: absolute;
     top: 0;
     right: 0;
+    width: 135px;
     text-align: center;
     z-index: 1;
     cursor: pointer;
@@ -420,6 +421,7 @@ footer > ul > li > a {
     cursor: pointer;
     color: black;
     position: absolute;
+    width: 156px;
     right: 0;
     top: 57;
     background: white;
@@ -473,6 +475,7 @@ footer > ul > li > a {
     position: absolute;
     width: max-content;
     height: max-content;
+    width: 83px;
     right: 73;
     top: 93;
     background: white;
@@ -486,10 +489,12 @@ footer > ul > li > a {
 }
 
 .qntGIF {
+    width: 60px;
     right: 0;
 }
 
 .aviso {
+    width: 177px;
     right: 0;
     top: 129;
     background: #FF6767;
@@ -501,9 +506,6 @@ footer > ul > li > a {
     top: 50;
     right: 5;
     position: fixed;
-    width: 200px;
-    /* height: 510px; */
-    /* background: red; */
     z-index: 2;
 }
 
