@@ -2,22 +2,10 @@ $(document).ready(function(){
     $("footer").load("files/footer.html");
     $("nav").load("files/nav.html");
     
-    // ADBLOCKER 
-    // setInterval(function(){
-    //     if($('.fundoPreto').length == 0){
-    //         $.get("adblockon.html", function (html) {
-    //             $("body").append(html);
-    //         });
-    //     }
-    //     if(!document.getElementById('TEOpIRMaDNmn') || !document.getElementById('TfDLiAEVOJSI')){
-    //         $('.fundoPreto').show();
-    //     }
-    // }, 300);
-
-    // AUDIOS
-
+    // ADICIONAR ÍCONE DE PLAY
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
-    // $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    // ADICIONAR BOTÃO DE DOWNLOAD
+    $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
     
     
     $("audio").on('ended', function(){
@@ -28,15 +16,21 @@ $(document).ready(function(){
         $('audio').click();
     });
     
-    // var botoes = $(".botao").not(".botaoD");
+    // BOTÃO DOWNLOAD
+
+    var botoes = $(".botao").not(".botaoD");
     
-    // for(var i = 0; i < botoes.length; i++){
-    //     var b = $(botoes[i]);
-    //     b.children("a").attr("href", b.children("audio").attr('src'));
-    //     b.children("a").attr("download",'');
-    // }
+    //Adicionar o link para download a partir do endereço do áudio
+    for(var i = 0; i < botoes.length; i++){
+        var b = $(botoes[i]);
+        b.children("a").attr("href", b.children("audio").attr('src'));
+        b.children("a").attr("download",'');
+    }
+
+    // -------
     
     $(".botao").click(function (e) {
+        //Se tiver a classe 'baixar' significa que o botão de Download foi clicado e não o botão Play
         if($(e.target).hasClass("baixar")) return;
         
         var play = $(this).children("audio")[0];
@@ -51,16 +45,17 @@ $(document).ready(function(){
         }
     });
     
-    // GIFS
-    // $('.gif').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    // GIFS DOWNLOAD
+    //adiciona botão de download
+    $('.gif').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
     
-    // var gifs = $(".gif");
+    var gifs = $(".gif");
     
-    // for(var i = 0; i < gifs.length; i++){
-    //     var b = $(gifs[i]);
-    //     b.children("a").attr("href", b.children("img").attr('src'));
-    //     b.children("a").attr("download",'');
-    // }
+    for(var i = 0; i < gifs.length; i++){
+        var b = $(gifs[i]);
+        b.children("a").attr("href", b.children("img").attr('src'));
+        b.children("a").attr("download",'');
+    }
     
     // 
     setTimeout(function () {
@@ -81,11 +76,11 @@ $(document).ready(function(){
     }, 1500);
         
     $('.exit').click(function(){
-        if($(this).parent().hasClass('comentar')){
+        if($(this).parent().hasClass('comentar')){ //Se for 'comentar' significa que este é o Exit do caixa de comentários
             $(this).parent().toggle('slide', { direction: 'right' }, 400);
             $('.naoCarregando').toggle('slide', { direction: 'right' }, 400);
             $('.toggleComentar').toggle('slide', { direction: 'right' }, 400);
-        } else if($(this).hasClass('toggleBaloes')){
+        } else if($(this).hasClass('toggleBaloes')){ //Se tiver 'toggleBaloes' significa que é o Exit dos balões de informações
             $('.baloes').css({'width':410, 'height':510});
             $('.baloes').toggle('slide', { direction: 'right' }, 330);
             if($(this).css('right') == '190px'){
@@ -120,6 +115,7 @@ $(document).ready(function(){
     });
     }
 );
+
 function updateNav(){
     if($(window).width() <= 600){
         $('nav > ul').hide();
