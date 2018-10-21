@@ -31,7 +31,7 @@ $(document).ready(function(){
     
     $(".botao").click(function (e) {
         //Se tiver a classe 'baixar' significa que o botão de Download foi clicado e não o botão Play
-        if($(e.target).hasClass("baixar")) return;
+        if($(e.target).hasClass("baixar")) return; //retorna para cancelar
         
         var play = $(this).children("audio")[0];
         
