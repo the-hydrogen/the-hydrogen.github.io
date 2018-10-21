@@ -38,13 +38,12 @@ nav > ul > li:hover {
     color: black;
 }
 nav > ul > li > a {
+    font-weight: bold;
     text-decoration: none !important;
     transition: all 0.3s;
     color: white;
 }
 nav > ul > li:hover > a {
-    font-weight: bold;
-    text-decoration: none !important;
     transition: all 0.3s;
     color: black;
 }
