@@ -113,6 +113,9 @@ $(document).ready(function(){
     $(window).on('resize', function(){
         updateNav();
     });
+
+    $('img').attr('alt','não foi possível carregar a imagem, recarregue a página ou baixe a imagem para ver');
+    $('img').css({'font-size':13, 'text-align':'center'});
     }
 );
 
