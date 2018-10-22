@@ -2,7 +2,7 @@ $(document).ready(function(){
     $("footer").load("files/footer.html");
     $("nav").load("files/nav.html");
     
-    // ADICIONAR ÍCONE DE PLAY
+    // ADICIONAR ÍCONE DE PLAY 
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
     $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
