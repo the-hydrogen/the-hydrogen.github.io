@@ -285,10 +285,6 @@ footer > ul > li > a {
     box-shadow: 0 0 10px black;
 }
 
-.ativarTodos:active {
-    transform: scale(0.95);
-}
-
 .comentar {
     z-index: 2;
     display: none;
@@ -322,7 +318,8 @@ footer > ul > li > a {
     cursor: pointer;
     color: black;
     position: absolute;
-    width: 170px;
+    width: max-content;
+    /* width: 170px; */
     right: 0;
     top: 57;
     background: white;
@@ -332,10 +329,19 @@ footer > ul > li > a {
     font-size: 14px;
     font-weight: bold;
     box-shadow: 0 0 5px black;
+    transition: all 0.3s;
 }
+
 
 .naoCarregando {
     display: none;
+}
+
+.toggleComentar:hover, .naoCarregando:hover, .ativarTodos:hover {
+    background: #D2D2D2;
+}
+.toggleComentar:active, .naoCarregando:active, .ativarTodos:active {
+    transform: scale(0.95);
 }
 
 #collapse {
@@ -371,13 +377,14 @@ footer > ul > li > a {
 /* Quantidade de Audios/GIFs */
 
 .qntAudios, .qntGIF, .aviso {
+    cursor: default;
     text-align: center;
     z-index: 1;
     font-weight: bold;
     position: absolute;
     width: max-content;
     height: max-content;
-    width: 95px;
+    /* width: 95px; */
     right: 83;
     top: 93;
     background: white;
@@ -391,12 +398,12 @@ footer > ul > li > a {
 }
 
 .qntGIF {
-    width: 75px;
+    /* width: 75px; */
     right: 0;
 }
 
 .aviso {
-    width: 200px;
+    /* width: 200px; */
     right: 0;
     top: 129;
     background: #FF6767;

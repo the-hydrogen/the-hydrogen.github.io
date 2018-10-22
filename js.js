@@ -41,7 +41,7 @@ $(document).ready(function(){
             play.play();
         } else {
             play.pause();
-            play.load();
+            play.currentTime = 0;
         }
     });
     
