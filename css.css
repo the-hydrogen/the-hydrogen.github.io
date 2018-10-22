@@ -273,7 +273,8 @@ footer > ul > li > a {
     position: absolute;
     top: 0;
     right: 0;
-    width: 170px;
+    width: max-content;
+    /* width: 170px; */
     text-align: center;
     z-index: 1;
     cursor: pointer;
