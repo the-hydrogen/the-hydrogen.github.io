@@ -179,7 +179,6 @@ footer > ul > li > a {
     box-shadow: 0 0 14px black;
 }
 
-
 .botao:active {
     transform: scale(0.8);
 }
@@ -330,9 +329,8 @@ footer > ul > li > a {
     font-size: 14px;
     font-weight: bold;
     box-shadow: 0 0 5px black;
-    transition: all 0.3s;
+    transition: transform 0.3s;
 }
-
 
 .naoCarregando {
     display: none;
