@@ -321,7 +321,7 @@ footer > ul > li > a {
     width: max-content;
     /* width: 170px; */
     right: 0;
-    top: 57;
+    top: 58;
     background: white;
     padding: 5px 15px;
     text-align: center;
@@ -384,8 +384,8 @@ footer > ul > li > a {
     width: max-content;
     height: max-content;
     /* width: 95px; */
-    right: 93;
-    top: 93;
+    right: 0;
+    top: 95;
     background: white;
     border-radius: 10px;
     padding: 5px 7px;
@@ -398,13 +398,12 @@ footer > ul > li > a {
 
 .qntGIF {
     /* width: 75px; */
-    right: 0;
+    top: 132;
 }
 
 .aviso {
     /* width: 200px; */
-    right: 0;
-    top: 129;
+    top: 169;
     background: #FF6767;
     color: black;
     box-shadow: 0 0 5px red;
