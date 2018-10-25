@@ -121,7 +121,7 @@ $(document).ready(function () {
         e.preventDefault();
     });
     $('img').on('load', function () {
-        $(this).siblings('i').remove();
+        $(this).siblings('.loader').remove();
     });
 
     $('.backimg').click(function (e) {
