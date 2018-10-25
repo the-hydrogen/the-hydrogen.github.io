@@ -362,15 +362,28 @@ footer > ul > li > a {
     margin-bottom: 4px;
     padding: 9px;
 }
-
+.gif {
+    position: relative;
+}
 .gif > img {
-    pointer-events: none;
+    /* pointer-events: painted; */
     border-radius: 10px;
     width: 150px;
     height: 100px;
     margin: 23px 1px;
     box-shadow: 0 0 14px black;
     transition: all 0.3s;
+}
+
+.gif > i {
+    cursor: pointer;
+    font-size: 90px;
+    position: absolute;
+    left: 30;
+    top: 28;
+    color: black; 
+    opacity: 0.5;
+    text-shadow: 0 0 2px white;
 }
 
 /* Quantidade de Audios/GIFs */

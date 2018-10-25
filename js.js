@@ -4,6 +4,7 @@ $(document).ready(function () {
 
     // ADICIONAR ÍCONE DE PLAY 
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
+    $("img").before("<i class=\"far fa-play-circle\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
     $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
@@ -116,6 +117,19 @@ $(document).ready(function () {
 
     $('img').attr('alt', 'não foi possível carregar a imagem, recarregue a página ou baixe a imagem para ver');
     $('img').css({ 'font-size': 13, 'text-align': 'center' });
+    $('img').on('mousedown contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    $('.backimg').click(function (e) {
+        if($(e.target).hasClass('baixar')){
+            return;
+        }
+        var img = $(this).children('.gif').children('img')[0];
+        var src = $(img).attr('src').replace('/sprite','');
+        $(img).attr('src',src);
+        $(img).siblings('i').remove();
+    });
 }
 );
 
