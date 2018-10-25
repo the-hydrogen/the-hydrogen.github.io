@@ -366,6 +366,7 @@ footer > ul > li > a {
     position: relative;
 }
 .gif > img {
+    cursor: pointer;
     /* pointer-events: painted; */
     border-radius: 10px;
     width: 150px;
