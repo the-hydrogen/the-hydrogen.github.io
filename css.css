@@ -387,6 +387,20 @@ footer > ul > li > a {
     text-shadow: 0 0 2px white;
 }
 
+.loader {
+    border: 10px solid #e5e5e5;
+    border-top: 10px solid #333;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Quantidade de Audios/GIFs */
 
 .qntAudios, .qntGIF, .aviso {

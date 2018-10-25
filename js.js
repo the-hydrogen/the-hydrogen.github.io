@@ -120,15 +120,19 @@ $(document).ready(function () {
     $('img').on('mousedown contextmenu', function (e) {
         e.preventDefault();
     });
+    $('img').on('load', function () {
+        $(this).siblings('i').remove();
+    });
 
     $('.backimg').click(function (e) {
-        if($(e.target).hasClass('baixar')){
-            return;
-        }
+        if (!(e.target.tagName === 'IMG') && !(e.target.tagName == 'I')) return;
+
         var img = $(this).children('.gif').children('img')[0];
-        var src = $(img).attr('src').replace('/sprite','');
-        $(img).attr('src',src);
-        $(img).siblings('i').remove();
+        var src = $(img).attr('src').replace('/sprite', '');
+        $(img).attr('src', src);
+
+        $(img).siblings('i').removeClass();
+        $(img).siblings('i').addClass('loader');
     });
 }
 );
