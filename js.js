@@ -18,7 +18,7 @@ $(document).ready(function () {
         alert(url);
         
         if(url == 'gifs'){
-            $('img').click();
+            $('.gif > img').click();
         } else {
             $('audio').click();
         }
