@@ -14,7 +14,14 @@ $(document).ready(function () {
     });
 
     $('.ativarTodos').click(function () {
-        $('audio').click();
+        var url = location.pathname.substring(1).split('.')[0];
+        alert(url);
+        
+        if(url == 'gifs'){
+            $('img').click();
+        } else {
+            $('audio').click();
+        }
     });
 
     // BOTÃO DOWNLOAD
