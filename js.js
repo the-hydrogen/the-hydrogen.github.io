@@ -8,15 +8,11 @@ $(document).ready(function () {
     // ADICIONAR BOTÃO DE DOWNLOAD
     $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
-
     $("audio").on('ended', function () {
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
     });
 
     $('.ativarTodos').click(function () {
-        var url = location.pathname.substring(1).split('.')[0];
-        alert(url);
-        
         if(url == 'gifs'){
             $('.gif > img').click();
         } else {
@@ -153,4 +149,12 @@ function updateNav() {
         $('nav > ul').show();
         $('#MenuC').hide();
     }
+}
+
+//  MUDANDO TEXTO DE "AtivarTodos"
+
+var url = location.pathname.substring(1).split('.')[0];
+if(url == 'gifs'){
+    $('.ativarTodos').html('Ativar todos');
+    $('.ativarTodos').css('padding', '15');
 }
