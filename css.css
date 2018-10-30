@@ -1,7 +1,8 @@
 html, body {
     margin-top: 34px; 
     overflow-x: hidden !important; 
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif !important;
+    font-size: 13px;
+    /* font-family: 'Calibri' !important; */
 }
 
 a, a:hover {
@@ -210,16 +211,17 @@ footer > ul > li > a {
 .botao > div, .gif > div {
     padding: 0 5px;
     position: relative;
-    display: block;
     top: 20;
     width: 150px;
     max-width: 150px;
     height: 37px;
     background: rgb(255, 255, 255, 0.4);
     margin-bottom: 5px;
-    font-size: 13px;
+    font-size: 11px;
     border-radius: 5px;
     font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
 }
 
@@ -362,6 +364,7 @@ footer > ul > li > a {
     margin-bottom: 4px;
     padding: 9px;
 }
+
 .gif {
     position: relative;
 }

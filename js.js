@@ -6,14 +6,14 @@ $(document).ready(function () {
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
     $("img").before("<i class=\"far fa-play-circle\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
-    $('.botao').not('.botaoD').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
+    $('.botao').not('.botaoD').children('div').after("<br><a><button style='margin-top: 5px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
     $("audio").on('ended', function () {
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
     });
 
     $('.ativarTodos').click(function () {
-        if(url == 'gifs'){
+        if (url == 'gifs') {
             $('.gif > img').click();
         } else {
             $('audio').click();
@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     // GIFS DOWNLOAD
     //adiciona botão de download
-    $('.gif').children('div').after("<br><a><button class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    $('.gif').children('div').after("<br><a><button style='margin-top: 5px' class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
 
     var gifs = $(".gif");
 
@@ -154,7 +154,7 @@ function updateNav() {
 //  MUDANDO TEXTO DE "AtivarTodos"
 
 var url = location.pathname.substring(1).split('.')[0];
-if(url == 'gifs'){
+if (url == 'gifs') {
     $('.ativarTodos').html('Ativar todos');
     $('.ativarTodos').css('padding', '15');
 }
