@@ -59,6 +59,8 @@ nav > div > ul {
 
 nav > div > ul > li {
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     margin: 5 0;
     padding: 7px 9px;
     background: grey;
@@ -275,6 +277,8 @@ footer > ul > li > a {
     top: 0;
     right: 0;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     /* width: 170px; */
     text-align: center;
     z-index: 1;
@@ -321,6 +325,8 @@ footer > ul > li > a {
     color: black;
     position: absolute;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     /* width: 170px; */
     right: 0;
     top: 58;
@@ -349,6 +355,8 @@ footer > ul > li > a {
     display: none;
     background: grey;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;;
     padding: 7px 9px;
     border-radius: 7px;
     cursor: pointer;
@@ -413,7 +421,11 @@ footer > ul > li > a {
     font-weight: bold;
     position: absolute;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     height: max-content;
+    height: -moz-max-content;
+    height: -webkit-max-content;
     /* width: 95px; */
     right: 0;
     top: 95;
