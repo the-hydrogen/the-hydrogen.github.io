@@ -87,10 +87,10 @@ $(document).ready(function () {
         } else if ($(this).hasClass('toggleBaloes')) { //Se tiver 'toggleBaloes' significa que é o Exit dos balões de informações
             $('.baloes').css({ 'width': 410, 'height': 510 });
             $('.baloes').toggle('slide', { direction: 'right' }, 330);
-            if ($(this).css('right') == '190px') {
+            if ($(this).css('right') == '210px') {
                 $(this).css('right', 5);
             } else {
-                $(this).css('right', 190);
+                $(this).css('right', 210);
             }
             $(this).toggleClass('fa-arrow-right fa-arrow-left');
             setTimeout(function () {
@@ -141,7 +141,7 @@ $(document).ready(function () {
 );
 
 function updateNav() {
-    if ($(window).width() <= 600) {
+    if ($(window).width() <= 800) {
         $('nav > ul').hide();
         $('#collapse').show();
     } else {

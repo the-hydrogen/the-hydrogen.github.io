@@ -73,6 +73,7 @@ nav > div > ul > li:hover {
     color: black;
 }
 nav > div > ul > li > a {
+    font-weight: bold;
     text-decoration: none !important;
     transition: all 0.3s;
     color: white;
@@ -276,10 +277,10 @@ footer > ul > li > a {
     position: absolute;
     top: 0;
     right: 0;
-    width: max-content;
+    width: 160px;
+    /* width: max-content;
     width: -moz-max-content;
-    width: -webkit-max-content;
-    /* width: 170px; */
+    width: -webkit-max-content; */
     text-align: center;
     z-index: 1;
     cursor: pointer;
@@ -324,14 +325,14 @@ footer > ul > li > a {
     cursor: pointer;
     color: black;
     position: absolute;
-    width: max-content;
+    width: 200px;
+    /* width: max-content;
     width: -moz-max-content;
-    width: -webkit-max-content;
-    /* width: 170px; */
+    width: -webkit-max-content; */
     right: 0;
     top: 58;
     background: white;
-    padding: 5px 15px;
+    padding: 5px 10px;
     text-align: center;
     border-radius: 7px;
     font-size: 14px;
@@ -352,11 +353,9 @@ footer > ul > li > a {
 }
 
 #collapse {
+    width: 40px;
     display: none;
     background: grey;
-    width: max-content;
-    width: -moz-max-content;
-    width: -webkit-max-content;;
     padding: 7px 9px;
     border-radius: 7px;
     cursor: pointer;
@@ -420,13 +419,13 @@ footer > ul > li > a {
     z-index: 1;
     font-weight: bold;
     position: absolute;
-    width: max-content;
+    width: 115px;
+    /* width: max-content;
     width: -moz-max-content;
     width: -webkit-max-content;
     height: max-content;
     height: -moz-max-content;
-    height: -webkit-max-content;
-    /* width: 95px; */
+    height: -webkit-max-content; */
     right: 0;
     top: 95;
     background: white;
@@ -464,7 +463,7 @@ div.toggleBaloes {
     color: white;
     position: fixed;
     top: 53;
-    right: 190;
+    right: 210;
     cursor: pointer;
     background: #4C4CFF;
     padding: 10;
