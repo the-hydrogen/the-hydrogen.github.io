@@ -380,7 +380,6 @@ footer > ul > li > a {
 
 localfoto {
     display: table-cell;
-    vertical-align: middle;
     text-align: center;
     width: 250px;
     height: 174px;

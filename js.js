@@ -98,10 +98,10 @@ $(document).ready(function () {
         } else if ($(this).hasClass('toggleBaloes')) { //Se tiver 'toggleBaloes' significa que é o Exit dos balões de informações
             $('.baloes').css({ 'width': 410, 'height': 510 });
             $('.baloes').toggle('slide', { direction: 'right' }, 330);
-            if ($(this).css('right') == '210px') {
+            if ($(this).css('right') == '225px') {
                 $(this).css('right', 5);
             } else {
-                $(this).css('right', 210);
+                $(this).css('right', 225);
             }
             $(this).toggleClass('fa-arrow-right fa-arrow-left');
             setTimeout(function () {
@@ -131,25 +131,28 @@ $(document).ready(function () {
 
     $('img').attr('alt', 'Não foi possível carregar a imagem, recarregue a página ou baixe a imagem para ver');
     $('img').css({ 'font-size': 13, 'text-align': 'center' });
-    $('.gif > img').on('mousedown contextmenu', function (e) {
-        e.preventDefault();
-    });
-    $('img').on('load', function () {
-        $(this).siblings('.loader').remove();
-    });
 
-    $('.backimg').click(function (e) {
-        if (!(e.target.tagName === 'IMG') && !(e.target.tagName == 'I')) return;
+    if (url == 'gifs') {
+        $('img').on('mousedown contextmenu', function (e) {
+            e.preventDefault();
+        });
 
-        var img = $(this).children('.gif').children('img')[0];
-        var src = $(img).attr('src').replace('/sprite', '');
-        $(img).attr('src', src);
+        $('img').on('load', function () {
+            $(this).siblings('.loader').remove();
+        });
 
-        $(img).siblings('i').removeClass();
-        $(img).siblings('i').addClass('loader');
-    });
-}
-);
+        $('.backimg').click(function (e) {
+            if (!(e.target.tagName === 'IMG') && !(e.target.tagName == 'I')) return;
+
+            var img = $(this).children('.gif').children('img')[0];
+            var src = $(img).attr('src').replace('/sprite', '');
+            $(img).attr('src', src);
+
+            $(img).siblings('i').removeClass();
+            $(img).siblings('i').addClass('loader');
+        });
+    }
+});
 
 function updateNav() {
     if ($(window).width() <= 800) {
@@ -172,12 +175,12 @@ if (url == 'gifs') {
 
 if (url == 'imagens') {
     $('.ativarTodos').remove();
-    $('.comentar').css('top',37);
-    $('.toggleComentar').css('top',0);
-    $('.naoCarregando').css('top',0);
-    $('.qntAudios').css('top',37);
-    $('.qntGIF').css('top',74);
-    $('.qntImg').css('top',111);
+    $('.comentar').css('top', 37);
+    $('.toggleComentar').css('top', 0);
+    $('.naoCarregando').css('top', 0);
+    $('.qntAudios').css('top', 37);
+    $('.qntGIF').css('top', 74);
+    $('.qntImg').css('top', 111);
 
     $('.backimg').css('height', 244);
     $('.backimg').css('width', 270);
