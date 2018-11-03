@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     // ADICIONAR ÍCONE DE PLAY 
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
-    $("img").before("<i class=\"fas fa-play\"></i>");
+    $(".gif").append("<i class=\"fas fa-play\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
     $('.botao').not('.botaoD').children('div').after("<br><a><button style='margin-top: 5px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
@@ -51,13 +51,24 @@ $(document).ready(function () {
 
     // GIFS DOWNLOAD
     //adiciona botão de download
-    $('.gif').children('div').after("<br><a><button style='margin-top: -6px' class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    $('.gif').children('div').after("<br><a><button style='margin-top: -26px' class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    // IMG DOWNLOAD
+    //adiciona botão de download
+    $('localfoto').after("<br><a><button style='margin-top: -10px' class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
 
     var gifs = $(".gif");
 
     for (var i = 0; i < gifs.length; i++) {
         var b = $(gifs[i]);
         b.children("a").attr("href", b.children("img").attr('src'));
+        b.children("a").attr("download", '');
+    }
+
+    var gifs = $(".imagem");
+
+    for (var i = 0; i < gifs.length; i++) {
+        var b = $(gifs[i]);
+        b.children("a").attr("href", b.children('localfoto').children("img").attr('src'));
         b.children("a").attr("download", '');
     }
 
@@ -118,9 +129,9 @@ $(document).ready(function () {
         updateNav();
     });
 
-    $('img').attr('alt', 'não foi possível carregar a imagem, recarregue a página ou baixe a imagem para ver');
+    $('img').attr('alt', 'Não foi possível carregar a imagem, recarregue a página ou baixe a imagem para ver');
     $('img').css({ 'font-size': 13, 'text-align': 'center' });
-    $('img').on('mousedown contextmenu', function (e) {
+    $('.gif > img').on('mousedown contextmenu', function (e) {
         e.preventDefault();
     });
     $('img').on('load', function () {
@@ -157,4 +168,16 @@ var url = location.pathname.substring(1).split('.')[0];
 if (url == 'gifs') {
     $('.ativarTodos').html('Ativar todos');
     $('.ativarTodos').css('padding', '15');
+}
+
+if (url == 'imagens') {
+    $('.ativarTodos').remove();
+    $('.comentar').css('top',37);
+    $('.toggleComentar').css('top',0);
+    $('.naoCarregando').css('top',0);
+    $('.qntAudios').css('top',37);
+    $('.qntGIF').css('top',74);
+
+    $('.backimg').css('height', 244);
+    $('.backimg').css('width', 270);
 }

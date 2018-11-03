@@ -211,7 +211,7 @@ footer > ul > li > a {
     background: none !important;
 }
 
-.botao > div, .gif > div {
+.botao > div, .gif > div, .imagem > div {
     padding: 0 5px;
     position: relative;
     top: 20;
@@ -228,8 +228,8 @@ footer > ul > li > a {
     height: 45px;
 }
 
-.gif > div {
-    top: 10;
+.gif > div, .imagem > div {
+    top: -10;
 }
 
 /* Icons */
@@ -370,15 +370,40 @@ footer > ul > li > a {
 .backimg {
     background: #C2FF66;
     display: inline-block;
-    height: 260px;
+    height: 240px;
     border-radius: 25px;
     margin-bottom: 4px;
     padding: 9px;
 }
 
+/* Imagem */
+
+localfoto {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 250px;
+    height: 174px;
+    /* background: red; */
+}
+
+localfoto > img {
+    height: 174px;
+    width: auto;
+    max-height: 174px;
+    max-width: 250px;
+    margin: 0;
+    box-shadow: 0 0 14px rgb(0, 0, 0, 0.9);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* GIFs */
+
 .gif {
     position: relative;
 }
+
 .gif > img {
     cursor: pointer;
     /* pointer-events: painted; */
@@ -386,7 +411,7 @@ footer > ul > li > a {
     width: 150px;
     height: 100px;
     margin: 23px 1px;
-    box-shadow: 0 0 14px black;
+    box-shadow: 0 0 14px rgb(0, 0, 0, 0.9);
     transition: all 0.3s;
 }
 
@@ -469,7 +494,7 @@ div.toggleBaloes {
     color: white;
     position: fixed;
     top: 53;
-    right: 210;
+    right: 225;
     cursor: pointer;
     background: #4C4CFF;
     padding: 10;
