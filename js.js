@@ -177,6 +177,7 @@ if (url == 'imagens') {
     $('.naoCarregando').css('top',0);
     $('.qntAudios').css('top',37);
     $('.qntGIF').css('top',74);
+    $('.qntImg').css('top',111);
 
     $('.backimg').css('height', 244);
     $('.backimg').css('width', 270);

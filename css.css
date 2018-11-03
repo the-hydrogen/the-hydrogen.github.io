@@ -444,7 +444,7 @@ localfoto > img {
 
 /* Quantidade de Audios/GIFs */
 
-.qntAudios, .qntGIF, .aviso {
+.qntAudios, .qntGIF, .qntImg, .aviso {
     cursor: default;
     text-align: center;
     z-index: 1;
@@ -465,13 +465,17 @@ localfoto > img {
     box-shadow: 0 0 5px black;
 }
 
-.qntAudios > span, .qntGIF > span {
+.qntAudios > span, .qntGIF > span, .qntImg > span {
     color: #0069FF;
 }
 
 .qntGIF {
     /* width: 75px; */
     top: 132;
+}
+
+.qntImg {
+    top: 169;
 }
 
 .aviso {
