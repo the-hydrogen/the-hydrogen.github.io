@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     // ADICIONAR ÍCONE DE PLAY 
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
-    $("img").before("<i class=\"far fa-play-circle\"></i>");
+    $("img").before("<i class=\"fas fa-play\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
     $('.botao').not('.botaoD').children('div').after("<br><a><button style='margin-top: 5px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     // GIFS DOWNLOAD
     //adiciona botão de download
-    $('.gif').children('div').after("<br><a><button style='margin-top: 5px' class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    $('.gif').children('div').after("<br><a><button style='margin-top: -6px' class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
 
     var gifs = $(".gif");
 
