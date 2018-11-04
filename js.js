@@ -185,3 +185,7 @@ if (url == 'imagens') {
     $('.backimg').css('height', 244);
     $('.backimg').css('width', 270);
 }
+
+$('.qntAudios').html('<i class="fas fa-volume-down"></i> Áudios: <span>'+130+'</span>');
+$('.qntGIF').html('<i class="fas fa-image"></i> GIFs: <span>'+30+'</span>');
+$('.qntImg').html('<i class="fas fa-image"></i> Imagens: <span>'+51+'</span>');
