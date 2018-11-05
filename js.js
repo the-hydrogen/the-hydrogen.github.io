@@ -51,10 +51,10 @@ $(document).ready(function () {
 
     // GIFS DOWNLOAD
     //adiciona botão de download
-    $('.gif').children('div').after("<br><a><button style='margin-top: -26px' class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    $('.gif').children('div').after("<br><a><button style='margin-top: -26px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
     // IMG DOWNLOAD
     //adiciona botão de download
-    $('localfoto').after("<br><a><button style='margin-top: -10px' class=\"baixar btn btn-block btn-default\"><i class='glyphicon glyphicon-download-alt'></i> Baixar</button></a>");
+    $('localfoto').after("<br><a><button style='margin-top: -10px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
     var gifs = $(".gif");
 
@@ -188,4 +188,4 @@ if (url == 'imagens') {
 
 $('.qntAudios').html('<i class="fas fa-volume-down"></i> Áudios: <span>'+131+'</span>');
 $('.qntGIF').html('<i class="fas fa-image"></i> GIFs: <span>'+31+'</span>');
-$('.qntImg').html('<i class="fas fa-image"></i> Imagens: <span>'+70+'</span>');
+$('.qntImg').html('<i class="fas fa-image"></i> Imagens: <span>'+71+'</span>');
