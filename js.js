@@ -186,6 +186,6 @@ if (url == 'imagens') {
     $('.backimg').css('width', 270);
 }
 
-$('.qntAudios').html('<i class="fas fa-volume-down"></i> Áudios: <span>'+131+'</span>');
+$('.qntAudios').html('<i class="fas fa-volume-down"></i> Áudios: <span>'+133+'</span>');
 $('.qntGIF').html('<i class="fas fa-image"></i> GIFs: <span>'+31+'</span>');
 $('.qntImg').html('<i class="fas fa-image"></i> Imagens: <span>'+76+'</span>');
