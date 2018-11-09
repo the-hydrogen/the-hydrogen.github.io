@@ -13,7 +13,7 @@ nav {
     width: 100%;
     min-height: 42px;
     top: 0;
-    background: #666;
+    background: #555;
     z-index: 3;
 }
 
@@ -28,7 +28,7 @@ nav > ul > li {
     display: inline-block;
     margin: 5 0;
     padding: 7px 9px;
-    background: grey;
+    background: #777;
     transition: all 0.3s;
     border-radius: 7px;
 }
@@ -38,6 +38,7 @@ nav > ul > li:hover {
     color: black;
 }
 nav > ul > li > a {
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none !important;
     transition: all 0.3s;
@@ -144,7 +145,7 @@ header {
 
 footer {
     color: black;
-    background: grey;
+    background: #555;
     padding: 10px 0;
 }
 
