@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     for (var i = 0; i < gifs.length; i++) {
         var b = $(gifs[i]);
-        b.children("a").attr("href", b.children("img").attr('src'));
+        b.children("a").attr("href", b.children("img").attr('src').replace('/sprite', ''));
         b.children("a").attr("download", '');
     }
 
