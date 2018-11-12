@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     for (var i = 0; i < gifs.length; i++) {
         var b = $(gifs[i]);
-        b.children("a").attr("href", b.children("img").attr('src').replace('/sprite', ''));
+        b.children("a").attr("href", b.children("img").attr('src').replace('/sprite', '').replace('.png','.gif'));
         b.children("a").attr("download", '');
     }
 
@@ -145,7 +145,7 @@ $(document).ready(function () {
             if (!(e.target.tagName === 'IMG') && !(e.target.tagName == 'I')) return;
 
             var img = $(this).children('.gif').children('img')[0];
-            var src = $(img).attr('src').replace('/sprite', '');
+            var src = $(img).attr('src').replace('/sprite', '').replace('.png','.gif');
             $(img).attr('src', src);
 
             $(img).siblings('i').removeClass();
