@@ -104,6 +104,10 @@
     background: url('img/Karthus.png');
 }
 
+.zed {
+    background: url('img/Zed.png')
+}
+
 .gratis {
     background: url('img/gratis.jpg');
     background-size: 330px;
