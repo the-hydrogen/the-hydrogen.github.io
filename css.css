@@ -11,10 +11,11 @@ a, a:hover {
 nav {
     position: fixed;
     width: 100%;
-    min-height: 42px;
+    height: 36px;
     top: 0;
-    background: #555;
+    background: #2A84A5;
     z-index: 3;
+    border-bottom: 1px solid black;
 }
 
 nav > ul {
@@ -26,16 +27,13 @@ nav > ul {
 
 nav > ul > li {
     display: inline-block;
-    margin: 5 0;
     padding: 7px 9px;
-    background: #777;
+    background: #31A2CC;
     transition: all 0.3s;
-    border-radius: 7px;
 }
 
 nav > ul > li:hover {
-    background: red;
-    color: black;
+    background: #24B6ED;
 }
 nav > ul > li > a {
     font-size: 15px;
@@ -43,10 +41,12 @@ nav > ul > li > a {
     text-decoration: none !important;
     transition: all 0.3s;
     color: white;
+    text-shadow: 1px 1px 0px black;
 }
 nav > ul > li:hover > a {
     transition: all 0.3s;
-    color: black;
+    color: white;
+    /* text-shadow: 1px 1px 0px white; */
 }
 
 /* DIV COLLAPSE NAV */
@@ -63,7 +63,7 @@ nav > div > ul > li {
     width: -webkit-max-content;
     margin: 5 0;
     padding: 7px 9px;
-    background: grey;
+    background: #6C6C6C;
     transition: all 0.3s;
     border-radius: 7px;
 }
@@ -95,57 +95,32 @@ header {
     text-align: center;
 }
 
-#menu {
-    font-size: px;
-    width: 20%;
-    background: green;
-}
-
-#menu > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#menu > ul > li > a {
-    display: block;
-    padding: 3px 0;
-    padding-left: 10px;
-    background: grey;
-    border-bottom: 1px solid black;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s;
-    border-color: black;
-}
-
-#menu > ul > li > a:hover {
-    border-left-width: 7px;
-    border-left-style: solid;
-    background: #999;
-}
-
 .mainpost {
     padding: 0 !important;
-    background: yellowgreen;
+    background-image: url("img/ventilador.png");
+    background-color: #123b4a;
 }
 
 .mainpost > h1 {
     margin: 0;
     padding: 5px 0;
-    background: #3C3C3C;
+    background: #262626;
     color: white;
     text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
 }
 
 .mainpost > div {
+    text-align: center;
     padding: 7px;
     min-height: 200px;
 }
 
 footer {
-    color: black;
-    background: #555;
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    color: white;
+    background: #181818;
     padding: 10px 0;
 }
 
@@ -161,7 +136,7 @@ footer > ul > li > a {
 }
 
 .back {
-    background: #C2FF66;
+    background: #216C87;
     display: inline-block;
     height: 260px;
     border-radius: 25px;
@@ -190,7 +165,7 @@ footer > ul > li > a {
 .botao > i {
     font-size: 130px;
     position: relative;
-    left: 5;
+    /* left: 5; */
     top: 5;
     color: black; 
     opacity: 0.5;
@@ -198,7 +173,7 @@ footer > ul > li > a {
 }
 
 .botaoD {
-    text-align: initial;
+    text-align: center;
     color: gold;
     box-shadow: 0 0 14px rgba(255, 215, 0, 0.6);
 }
@@ -244,6 +219,7 @@ footer > ul > li > a {
     text-align: center;
     color: white;
     transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .fa:hover {
@@ -273,8 +249,8 @@ footer > ul > li > a {
 
 #stream {
     color: white;
-    text-shadow: 1px 1px 1px black,
-                 2px 2px 1px black;
+    text-shadow: 1px 1px 0px black,
+                 2px 2px 0px black;
 }
 
 .ativarTodos {
@@ -368,10 +344,10 @@ footer > ul > li > a {
 }
 
 .backimg {
-    background: #C2FF66;
+    background: #216C87;
     display: inline-block;
-    height: 240px;
-    border-radius: 25px;
+    height: 220px;
+    border-radius: 15px;
     margin-bottom: 4px;
     padding: 9px;
 }
@@ -392,7 +368,7 @@ localfoto > img {
     max-height: 174px;
     max-width: 250px;
     margin: 0;
-    box-shadow: 0 0 14px rgb(0, 0, 0, 0.9);
+    box-shadow: 0 0 7px black;
     border-radius: 10px;
     margin-top: 5px;
 }
@@ -409,8 +385,10 @@ localfoto > img {
     border-radius: 10px;
     width: 150px;
     height: 100px;
-    margin: 23px 1px;
-    box-shadow: 0 0 14px rgb(0, 0, 0, 0.9);
+    margin: 0 1px;
+    margin-top: 4px;
+    margin-bottom: 23px;
+    box-shadow: 0 0 7px rgb(0, 0, 0, 0.9);
     transition: all 0.3s;
 }
 
@@ -419,7 +397,7 @@ localfoto > img {
     font-size: 60px;
     position: absolute;
     left: 55;
-    top: 43;
+    top: 25;
     color: black; 
     opacity: 0.5;
     text-shadow: 0 0 2px white;
@@ -427,7 +405,7 @@ localfoto > img {
 
 .loader {
     left: 30 !important;
-    top: 28 !important;
+    top: 9 !important;
     border: 10px solid #e5e5e5;
     border-top: 10px solid #333;
     border-radius: 50%;
