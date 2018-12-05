@@ -50,39 +50,44 @@ nav > ul > li:hover > a {
 }
 
 /* DIV COLLAPSE NAV */
+#MenuC {
+    background: white;
+    padding: 0 5;
+    padding-top: 1px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 2px black;
+}
 
-nav > div > ul {
+#MenuC > ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav > div > ul > li {
+#MenuC > ul > li {
     width: max-content;
     width: -moz-max-content;
     width: -webkit-max-content;
     margin: 5 0;
     padding: 7px 9px;
-    background: #6C6C6C;
+    background: #31A2CC;
     transition: all 0.3s;
-    border-radius: 7px;
 }
 
-nav > div > ul > li:hover {
-    background: red;
-    color: black;
+#MenuC > ul > li:hover {
+    background: #24B6ED;
 }
-nav > div > ul > li > a {
+#MenuC > ul > li > a {
     font-weight: bold;
     text-decoration: none !important;
     transition: all 0.3s;
     color: white;
 }
-nav > div > ul > li:hover > a {
+#MenuC > ul > li:hover > a {
     font-weight: bold;
     text-decoration: none !important;
     transition: all 0.3s;
-    color: black;
+    color: white;
 }
 
 /*  */
@@ -192,7 +197,7 @@ footer > ul > li > a {
     top: 20;
     width: 150px;
     max-width: 150px;
-    background: rgb(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.4);
     margin-bottom: 5px;
     font-size: 11px;
     border-radius: 5px;
@@ -333,14 +338,20 @@ footer > ul > li > a {
 }
 
 #collapse {
-    width: 40px;
+    text-align: center;
+    width: 33px;
+    height: 27px;
     display: none;
-    background: grey;
-    padding: 7px 9px;
+    background: white;
     border-radius: 7px;
     cursor: pointer;
-    font-size: 24px;
-    margin: 5 5;
+    font-size: 20px;
+    margin: 4 5;
+}
+
+#collapse > i {
+    color: black;
+    margin-top: 4;
 }
 
 .backimg {
