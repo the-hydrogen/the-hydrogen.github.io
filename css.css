@@ -494,3 +494,13 @@ div.toggleBaloes {
     z-index: 2;
     transition: all 0.4s;
 }
+
+/* CLIPES */
+
+.backclip {
+    display: inline-block;
+    background: #2A84A5;
+    padding: 7;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
