@@ -191,7 +191,7 @@ footer > ul > li > a {
     background: none !important;
 }
 
-.botao > div, .gif > div, .imagem > div {
+.botao > div, .gif > div {
     padding: 0 5px;
     position: relative;
     top: 20;
@@ -208,8 +208,14 @@ footer > ul > li > a {
     height: 45px;
 }
 
-.gif > div, .imagem > div {
-    top: -10;
+.gif > div {
+    width: 300px;
+    max-width: 300px;
+}
+
+
+.gif > div {
+    top: -13;
 }
 
 /* Icons */
@@ -357,7 +363,8 @@ footer > ul > li > a {
 .backimg {
     background: #216C87;
     display: inline-block;
-    height: 220px;
+    height: 320px;
+    /* height: 220px; */
     border-radius: 15px;
     margin-bottom: 4px;
     padding: 9px;
@@ -381,7 +388,7 @@ localfoto > img {
     margin: 0;
     box-shadow: 0 0 7px black;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 /* GIFs */
@@ -394,8 +401,10 @@ localfoto > img {
     cursor: pointer;
     /* pointer-events: painted; */
     border-radius: 10px;
-    width: 150px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
+    /* width: 150px;
+    height: 100px; */
     margin: 0 1px;
     margin-top: 4px;
     margin-bottom: 23px;
@@ -407,16 +416,16 @@ localfoto > img {
     cursor: pointer;
     font-size: 60px;
     position: absolute;
-    left: 55;
-    top: 25;
+    left: 125;
+    top: 75;
     color: black; 
     opacity: 0.5;
     text-shadow: 0 0 2px white;
 }
 
 .loader {
-    left: 30 !important;
-    top: 9 !important;
+    left: 110 !important;
+    top: 63 !important;
     border: 10px solid #e5e5e5;
     border-top: 10px solid #333;
     border-radius: 50%;

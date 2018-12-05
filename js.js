@@ -173,7 +173,7 @@ if (url == 'gifs') {
     $('.ativarTodos').css('padding', '15');
 }
 
-if (url == 'imagens') {
+if (url == 'imagens' || url == 'clipes') {
     $('.ativarTodos').remove();
     $('.comentar').css('top', 37);
     $('.toggleComentar').css('top', 0);
@@ -181,11 +181,8 @@ if (url == 'imagens') {
     $('.qntAudios').css('top', 37);
     $('.qntGIF').css('top', 74);
     $('.qntImg').css('top', 111);
-
-    $('.backimg').css('height', 244);
-    $('.backimg').css('width', 270);
+    if(url == 'imagens'){
+        $('.backimg').css('height', 238);
+        // $('.backimg').css('width', 270);
+    }
 }
-
-// $('.qntAudios').html('<i class="fas fa-volume-down"></i> Áudios: <span>' + 135 + '</span>');
-// $('.qntGIF').html('<i class="fas fa-image"></i> GIFs: <span>' + 31 + '</span>');
-// $('.qntImg').html('<i class="fas fa-image"></i> Imagens: <span>' + 78 + '</span>');
