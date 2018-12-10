@@ -1,3 +1,47 @@
+.botao {
+    cursor: pointer;
+    display: block;
+    /* display: inline-block; */
+    width: 140px;
+    height: 140px;
+    background-image: URL("img/btn.jpg");;
+    background-position: -100 -1;
+    border-radius: 50%;
+    transition: all 1s;
+    /* margin: 15 10 20 10; */
+    margin: 10 auto;
+    box-shadow: 0 0 14px black;
+}
+
+.botao > i {
+    font-size: 130px;
+    position: relative;
+    left: 0;
+    top: 5;
+    color: black; 
+    opacity: 0.5;
+    text-shadow: 0 0 2px white;
+}
+
+.botao:active {
+    transform: scale(0.8);
+}
+
+.botaoD {
+    text-align: center;
+    color: gold;
+    box-shadow: 0 0 14px rgba(255, 215, 0, 0.6);
+}
+
+.botaoD > i {
+    color: gold;
+}
+
+.botaoD ~ .desc {
+    color: yellow;
+    background: none !important;
+}
+
 .maconha {
     background: url('img/maconha.jpg');
     background-size: 250px;

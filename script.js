@@ -6,7 +6,7 @@ $(document).ready(function () {
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
     $(".gif").append("<i class=\"fas fa-play\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
-    $('.botao').not('.botaoD').children('div').after("<br><a><button style='margin-top: 5px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
+    $('.back').append("<a><button style='margin: 0 auto; margin-top: 5px; width: 143' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
     $("audio").on('ended', function () {
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
@@ -22,12 +22,12 @@ $(document).ready(function () {
 
     // BOTÃO DOWNLOAD
 
-    var botoes = $(".botao").not(".botaoD");
+    var botoes = $(".back");
 
     //Adicionar o link para download a partir do endereço do áudio
     for (var i = 0; i < botoes.length; i++) {
         var b = $(botoes[i]);
-        b.children("a").attr("href", b.children("audio").attr('src'));
+        b.children("a").attr("href", b.children(".botao").children("audio").attr('src'));
         b.children("a").attr("download", '');
     }
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     $(".botao").click(function (e) {
         //Se tiver a classe 'baixar' significa que o botão de Download foi clicado e não o botão Play
-        if ($(e.target).hasClass("baixar")) return; //retorna para cancelar
+        // if ($(e.target).hasClass("baixar")) return; //retorna para cancelar
 
         var play = $(this).children("audio")[0];
 
@@ -49,26 +49,24 @@ $(document).ready(function () {
         }
     });
 
-    // GIFS DOWNLOAD
+    // GIFS E IMAGEM DOWNLOAD
     //adiciona botão de download
-    $('.gif').children('div').after("<br><a><button style='margin-top: -26px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
-    // IMG DOWNLOAD
-    //adiciona botão de download
-    $('localfoto').after("<br><a><button style='margin-top: -10px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
-
-    var gifs = $(".gif");
+    $('.backgif ,.backimg').append("<a><button style='margin: 0 auto; margin-top: 5px;' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
+    $('.backgif').children('a').children('button').css('width',300);
+    $('.backimg').children('a').children('button').css('width',250);
+    var gifs = $(".backgif");
 
     for (var i = 0; i < gifs.length; i++) {
         var b = $(gifs[i]);
-        b.children("a").attr("href", b.children("img").attr('src').replace('/sprite', '').replace('.png','.gif'));
+        b.children("a").attr("href", b.children(".gif").children('img').attr('src').replace('/sprite', '').replace('.png', '.gif'));
         b.children("a").attr("download", '');
     }
 
-    var gifs = $(".imagem");
+    var gifs = $(".backimg");
 
     for (var i = 0; i < gifs.length; i++) {
         var b = $(gifs[i]);
-        b.children("a").attr("href", b.children('localfoto').children("img").attr('src'));
+        b.children("a").attr("href", b.children('.img').children("img").attr('src'));
         b.children("a").attr("download", '');
     }
 
@@ -141,11 +139,11 @@ $(document).ready(function () {
             $(this).siblings('.loader').remove();
         });
 
-        $('.backimg').click(function (e) {
+        $('.backgif').click(function (e) {
             if (!(e.target.tagName === 'IMG') && !(e.target.tagName == 'I')) return;
 
             var img = $(this).children('.gif').children('img')[0];
-            var src = $(img).attr('src').replace('/sprite', '').replace('.png','.gif');
+            var src = $(img).attr('src').replace('/sprite', '').replace('.png', '.gif');
             $(img).attr('src', src);
 
             $(img).siblings('i').removeClass();
@@ -153,6 +151,17 @@ $(document).ready(function () {
         });
     }
 });
+
+// Botão Dourado
+
+var botaoD = $(".back > .botaoD");
+
+    if(botaoD){
+        $(botaoD).parent().css({'background-color':'initial', 'box-shadow':'initial', 'height':'215'});
+        $().ready(function () {
+            $(botaoD).siblings('a').remove();
+        })
+    }
 
 function updateNav() {
     if ($(window).width() <= 860) {
@@ -168,6 +177,7 @@ function updateNav() {
 //  MUDANDO TEXTO DE "AtivarTodos"
 
 var url = location.pathname.substring(1).split('.')[0];
+
 if (url == 'gifs') {
     $('.ativarTodos').html('Ativar todos');
     $('.ativarTodos').css('padding', '15');

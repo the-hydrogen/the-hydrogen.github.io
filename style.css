@@ -1,0 +1,435 @@
+html, body {
+    margin-top: 35px; 
+    overflow-x: hidden !important; 
+    font-size: 13px;
+}
+
+.painel {
+    padding: 10;
+}
+
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+/* main post */
+
+.main-post {
+    text-align: center;
+    min-height: 600px;
+    background-image: url("img/ventilador.png");
+    background-color: #123b4a;
+}
+
+.main-post > h1 {
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10 0;
+    font-weight: bold;
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.back {
+    margin-top: 9;
+    margin-right: 5;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #216C87;
+    width: 160px;
+    height: 253px;
+}
+
+.back, .backgif, .backimg, .backclip {
+    box-shadow: 0 0 4px 2px black;
+}
+
+.back > .desc, .backgif > .desc {
+    color: black;
+    padding: 0 5px;
+    position: relative;
+    width: 143px;
+    background: rgba(255, 255, 255, 0.4);
+    /* margin-bottom: 5px; */
+    font-size: 11px;
+    border-radius: 5px;
+    left: 9;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 45px;
+}
+
+.backgif > .desc {
+    width: 300px;
+}
+
+/* NAV */
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 36px;
+    top: 0;
+    background: #2A84A5;
+    z-index: 3;
+    border-bottom: 1px solid black;
+}
+
+nav > ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 7px 9px;
+    background: #31A2CC;
+    transition: all 0.3s;
+}
+
+nav > ul > li:hover {
+    background: #24B6ED;
+}
+nav > ul > li > a {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: all 0.3s;
+    color: #FFFFFF !important;
+    text-shadow: 1px 1px 0px black;
+}
+nav > ul > li:hover > a {
+    transition: all 0.3s;
+}
+
+/* DIV COLLAPSE NAV */
+
+#MenuC {
+    background: white;
+    padding: 0 5;
+    padding-top: 1px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 2px black;
+}
+
+#MenuC > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#MenuC > ul > li {
+    width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    margin: 5 0;
+    padding: 7px 9px;
+    background: #31A2CC;
+    transition: all 0.3s;
+}
+
+#MenuC > ul > li:hover {
+    background: #24B6ED;
+}
+#MenuC > ul > li > a {
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: all 0.3s;
+    color: #FFFFFF !important;
+    text-shadow: 1px 1px 0px black;
+}
+#MenuC > ul > li:hover > a {
+    /* text-decoration: none !important; */
+    transition: all 0.3s;
+}
+
+/* STREAM */
+
+#stream {
+    color: white;
+    text-shadow: 1px 1px 0px black,
+                 2px 2px 0px black;
+}
+
+/* Collapse bar */
+
+#collapse {
+    text-align: center;
+    width: 33px;
+    height: 27px;
+    display: none;
+    background: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 4 5;
+}
+
+#collapse > i {
+    color: black;
+    margin-top: 4;
+}
+
+/* BACK GIF / BACKIMG */
+
+.backgif, .backimg {
+    margin-top: 5;
+    margin-right: 5;
+    background: #216C87;
+    display: inline-block;
+    width: 320px;
+    height: 313px;
+    /* width: 180px;
+    height: 235px; */
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+
+/* GIF */
+
+.gif {
+    position: relative;
+}
+
+.gif > img, .img > img {
+    display: block;
+    cursor: pointer;
+    /* pointer-events: painted; */
+    border-radius: 10px;
+    /* width: 160px;
+    height: 120px; */
+    width: 300px;
+    height: 200px;
+    margin: 11px auto;
+    margin-bottom: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    transition: all 0.3s;
+}
+
+.gif > i {
+    display: block;
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    left: 140;
+    top: 75;
+    color: black; 
+    opacity: 0.5;
+    text-shadow: 0 0 2px white;
+}
+
+.loader {
+    left: 110 !important;
+    top: 63 !important;
+    border: 10px solid #e5e5e5;
+    border-top: 10px solid #333;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* IMAGEM */
+.backimg {
+    width: 270px;
+    padding: 0 8;
+}
+
+.img > img {
+    width: auto;
+    max-width: 250px;
+    height: 170px;
+    cursor: initial;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    color: white;
+    background: #181818;
+    padding: 10px 0;
+}
+
+footer > ul {
+    list-style: none;
+    margin: 0;
+    width: 150px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* balões */
+
+.comentar > .fb-comments {
+    max-height: 350px !important;
+    overflow-y: auto !important;
+}
+
+.ativarTodos {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    /* width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content; */
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: black;
+    background: white;
+    border-radius: 7px;
+    transition: all 0.2s;
+    box-shadow: 0 0 10px black;
+}
+
+.comentar {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 95;
+    right: 0;
+    background: white;
+    padding: 20px 10px 10px 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px black;
+}
+
+.comentar > .fb-comments {
+    max-height: 350px !important;
+    overflow-y: auto !important;
+}
+
+.comentar > .exit {
+    cursor: pointer;
+    position: absolute;
+    top: 5;
+    left: 5;
+    color: white;
+    background: black;
+    padding: 3;
+    border-radius: 50%;
+}
+
+.toggleComentar, .naoCarregando {
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    width: 200px;
+    /* width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content; */
+    right: 0;
+    top: 58;
+    background: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 5px black;
+    transition: transform 0.3s;
+}
+
+.naoCarregando {
+    display: none;
+}
+
+.toggleComentar:hover, .naoCarregando:hover, .ativarTodos:hover {
+    background: #D2D2D2;
+}
+.toggleComentar:active, .naoCarregando:active, .ativarTodos:active {
+    transform: scale(0.95);
+}
+
+.baloes {
+    top: 53;
+    right: 8;
+    position: fixed;
+    z-index: 2;
+}
+
+div.toggleBaloes {
+    box-shadow: 0 0 5px black;
+    color: white;
+    position: fixed;
+    top: 53;
+    right: 225;
+    cursor: pointer;
+    background: #4C4CFF;
+    padding: 10;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.4s;
+}
+
+/* Icons */
+
+.fa {
+    padding: 15px;
+    font-size: 30px !important;
+    width: 60px;
+    border-radius: 50%;
+    text-decoration: none !important;
+    margin: 0 1px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fa:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    background: #009DFF;
+}
+
+.fa-instagram {
+    background: #125688;
+  }
+
+.fa-youtube {
+    background: red;
+  }
+
+.fa-twitch {
+    background: #6A00FF;
+  }
+
+  /* CLIPES */
+
+.backclip {
+    display: inline-block;
+    background: #2A84A5;
+    padding: 7;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
