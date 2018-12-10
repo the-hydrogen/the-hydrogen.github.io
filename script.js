@@ -6,7 +6,7 @@ $(document).ready(function () {
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
     $(".gif").append("<i class=\"fas fa-play\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
-    $('.back').append("<a><button style='margin: 0 auto; margin-top: 5px; width: 143' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
+    $('.back').append("<a><button style='margin: 0 auto; margin-top: 5px; width: 143px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
     $("audio").on('ended', function () {
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
@@ -52,8 +52,8 @@ $(document).ready(function () {
     // GIFS E IMAGEM DOWNLOAD
     //adiciona botão de download
     $('.backgif ,.backimg').append("<a><button style='margin: 0 auto; margin-top: 5px;' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
-    $('.backgif').children('a').children('button').css('width',300);
-    $('.backimg').children('a').children('button').css('width',250);
+    $('.backgif').children('a').children('button').css('width','300px');
+    $('.backimg').children('a').children('button').css('width','250px');
     var gifs = $(".backgif");
 
     for (var i = 0; i < gifs.length; i++) {
