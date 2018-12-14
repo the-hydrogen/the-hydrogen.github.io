@@ -6,7 +6,7 @@ $(document).ready(function () {
     $("audio").before("<i class=\"far fa-play-circle\"></i>");
     $(".gif").append("<i class=\"fas fa-play\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
-    $('.back').append("<a><button style='margin: 0 auto; margin-top: 5px; width: 143px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
+    $('.back').not('.backgold').append("<a><button style='margin: 0 auto; margin-top: 5px; width: 143px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
 
     $("audio").on('ended', function () {
         $(this).siblings("i").toggleClass("fa-pause-circle fa-play-circle");
@@ -151,17 +151,6 @@ $(document).ready(function () {
         });
     }
 });
-
-// Botão Dourado
-
-var botaoD = $(".back > .botaoD");
-
-    if(botaoD){
-        $(botaoD).parent().css({'background-color':'initial', 'box-shadow':'initial', 'height':'215'});
-        $().ready(function () {
-            $(botaoD).siblings('a').remove();
-        })
-    }
 
 function updateNav() {
     if ($(window).width() <= 860) {

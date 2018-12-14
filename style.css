@@ -46,6 +46,12 @@ header {
     height: 253px;
 }
 
+.backgold {
+    background-color: initial;
+    box-shadow: none !important;
+    height: 215px;
+}
+
 .back, .backgif, .backimg, .backclip {
     box-shadow: 0 0 4px 2px black;
 }
