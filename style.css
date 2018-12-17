@@ -1,8 +1,8 @@
 
-body {
+html, body {
     margin-top: 35px; 
-    /* overflow-x: hidden !important;  */
     font-size: 13px;
+    overflow-x: hidden !important; 
 }
 
 .painel {
@@ -284,11 +284,6 @@ footer > ul > li > a {
 }
 
 /* balões */
-
-.comentar > .fb-comments {
-    max-height: 350px !important;
-    overflow-y: auto !important;
-}
 
 .ativarTodos {
     position: absolute;
