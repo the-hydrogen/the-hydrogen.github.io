@@ -1,6 +1,7 @@
-html, body {
+
+body {
     margin-top: 35px; 
-    overflow-x: hidden !important; 
+    /* overflow-x: hidden !important;  */
     font-size: 13px;
 }
 
@@ -17,7 +18,6 @@ header {
 }
 
 /* main post */
-
 .main-post {
     text-align: center;
     min-height: 600px;
