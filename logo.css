@@ -110,6 +110,7 @@
 
 .renekton {
     background: url('img/Renekton.png');
+    background-position: -30 -1 !important;
 }
 
 .kassadin {
