@@ -1,10 +1,4 @@
 $(document).ready(function () {
-
-    // NATAL 
-    $('body').append('<audio style="display: none" autoplay loop id="musica" src="natal.mp4">');
-    $('#musica').prop("volume", 0.02);
-    // NATAL
-
     $("footer").load("files/footer.html");
     $("nav").load("files/nav.html");
 
