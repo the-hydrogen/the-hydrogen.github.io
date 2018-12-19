@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // NATAL 
-    $('body').append('<audio autoplay loop id="musica" src="natal.mp4">');
+    $('body').append('<audio style="display: none" autoplay loop id="musica" src="natal.mp4">');
     $('#musica').prop("volume", 0.02);
     // NATAL
 
@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("nav").load("files/nav.html");
 
     // ADICIONAR ÍCONE DE PLAY 
-    $("audio").before("<i class=\"far fa-play-circle\"></i>");
+    $("audio").not("#musica").before("<i class=\"far fa-play-circle\"></i>");
     $(".gif").append("<i class=\"fas fa-play\"></i>");
     // ADICIONAR BOTÃO DE DOWNLOAD
     $('.back').not('.backgold').append("<a><button style='margin: 0 auto; margin-top: 5px; width: 143px' class=\"baixar btn btn-block btn-default\"><i class='fas fa-arrow-alt-circle-down'></i> Baixar</button></a>");
