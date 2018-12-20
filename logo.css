@@ -18,9 +18,9 @@
     position: relative;
     left: 0;
     top: 5;
-    color: black; 
-    opacity: 0.5;
-    text-shadow: 0 0 2px white;
+    color: #FFFFFF; 
+    opacity: 0.4;
+    text-shadow: 0 0 10px #000000;
 }
 
 .botao:active {
@@ -56,8 +56,8 @@
 .HYPERBRUH {
     background-color: black;
     background-image: url('img/HYPERBRUH.png');
-    background-size: 200px;
-    background-position: -10 -20;
+    background-size: 150px;
+    background-position: 10 -2;
     background-repeat: no-repeat;
 }
 
