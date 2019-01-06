@@ -105,6 +105,8 @@ $(document).ready(function () {
             setTimeout(function () {
                 $('.baloes').css({ 'width': 0, 'height': 0 });
             }, 401);
+        } else {
+            $(this).parent().toggle('fade', 400);
         }
     });
 
