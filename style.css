@@ -441,12 +441,12 @@ div.toggleBaloes {
 
 .parabens {
     color: black;
-    font-size: 25px;
+    font-size: 17px;
     position: fixed;
     background-color: white;
     padding: 10px;
-    width: 600px;
-    height: 500px;
+    width: 400px;
+    height: 420px;
     z-index: 3;
     text-align: center;
     top: 50%;
@@ -459,8 +459,8 @@ div.toggleBaloes {
 .parabens > .exit {
     cursor: pointer;
     position: absolute;
-    top: 10;
-    right: 10;
+    top: 20;
+    right: 20;
     color: black;
     border-radius: 50%;
 }
