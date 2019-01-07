@@ -15,17 +15,13 @@ header {
     text-align: center;
     font-size: 60px;
     padding-top: 20px;
-    /* Imagem de fundo adicionada */
-    background-image: url("img/confete.jpg");
 }
 
 /* main post */
 .main-post {
     text-align: center;
     min-height: 600px;
-    /* imagem de fundo alterada */
-    background-image: url("img/confete.jpg");
-    /* background-image: url("img/ventilador.png"); */
+    background-image: url("img/ventilador.png");
     background-color: #123b4a;
 }
 
@@ -48,16 +44,12 @@ header {
     background-color: #216C87;
     width: 160px;
     height: 253px;
-    /* opacidade alterada */
-    opacity: 0.85;
 }
 
 .backgold {
     background-color: initial;
     box-shadow: none !important;
     height: 215px;
-    /* opacidade alterada */
-    opacity: 0.85;
 }
 
 .back, .backgif, .backimg, .backclip {
@@ -204,8 +196,6 @@ nav > ul > li:hover > a {
     height: 313px;
     border-radius: 10px;
     margin-bottom: 4px;
-    /* opacidade alterada */
-    opacity: 0.85;
 }
 
 /* GIF */
@@ -274,8 +264,6 @@ footer {
     color: white;
     background: #181818;
     padding: 10px 0;
-    /* imagem de fundo alterada */
-    background-image: url("img/confete.jpg");
 }
 
 footer > ul {
@@ -433,34 +421,4 @@ div.toggleBaloes {
     padding: 7;
     border-radius: 10px;
     margin-bottom: 5px;
-     /* opacidade alterada */
-     opacity: 0.85;
-}
-
-/* Balão de aniversário */
-
-.parabens {
-    color: black;
-    font-size: 17px;
-    position: fixed;
-    background-color: white;
-    padding: 10px;
-    width: 400px;
-    height: 420px;
-    z-index: 3;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    border: 2px solid black;
-} 
-
-.parabens > .exit {
-    cursor: pointer;
-    position: absolute;
-    top: 20;
-    right: 20;
-    color: black;
-    border-radius: 50%;
 }
